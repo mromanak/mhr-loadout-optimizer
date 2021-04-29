@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:localhost/monster_hunter
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+hibernate:
+  connection:
+    autocommit: true
+  dialect: org.hibernate.dialect.H2Dialect

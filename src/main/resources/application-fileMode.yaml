@@ -1,0 +1,12 @@
+com:
+  mromanak:
+    dbDirectory: ./data
+    dbName: monster_hunter
+
+spring:
+  datasource:
+    url: jdbc:h2:file:${com.mromanak.dbDirectory}/${com.mromanak.dbName}
+    initialization-mode: never
+  jpa:
+    hibernate:
+      ddl-auto: update
