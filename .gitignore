@@ -1,0 +1,7 @@
+.idea
+*.iml
+target/
+data/monster_hunter.trace.db
+tmp
+src/main/java/com/mromanak/loadoutoptimizer/oneoffs/**
+src/main/node/
