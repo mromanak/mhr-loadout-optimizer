@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 590 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
+-- 592 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -630,7 +630,9 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('teostra-arms-s', 2, 74, -3, 4, -1, 0, 1, 0, 0, 'Kaiser Vambraces', 7, 'Teostra', '1', 1, -4, NULL);          
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('teostra-waist-s', 3, 74, -3, 4, -1, 0, 0, 1, 0, 'Kaiser Coil', 7, 'Teostra', '1', 1, -4, NULL),
-('teostra-legs-s', 4, 74, -3, 4, -1, 1, 0, 0, 0, 'Kaiser Greaves', 7, 'Teostra', '1', 1, -4, NULL);
+('teostra-legs-s', 4, 74, -3, 4, -1, 1, 0, 0, 0, 'Kaiser Greaves', 7, 'Teostra', '1', 1, -4, NULL),
+('flame-seal-head-s', 0, 56, 0, 3, 0, 0, 0, 0, 0, 'Flame Seal', 7, 'Flame Seal', '1', 0, 0, NULL),
+('feather-of-mastery-head-s', 0, 56, 0, 0, 0, 0, 0, 0, 0, 'Feather of Mastery', 7, 'Feather of Mastery', '1', 0, 0, NULL);  
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -638,7 +640,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 907 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
+-- 909 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -1517,45 +1519,47 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'chameleos-head-s', 'evade-window'),
 (2, 'chameleos-head-s', 'mind-s-eye'),
 (1, 'chameleos-body-s', 'ballistics'),
-(1, 'chameleos-body-s', 'chameleos-blessing'),
 (1, 'chameleos-body-s', 'mind-s-eye'),
 (1, 'chameleos-body-s', 'poison-attack'),
-(1, 'chameleos-arms-s', 'chameleos-blessing'),
 (1, 'chameleos-arms-s', 'evade-window'),
 (1, 'chameleos-arms-s', 'poison-attack'),
-(1, 'chameleos-waist-s', 'chameleos-blessing'),
 (1, 'chameleos-waist-s', 'poison-attack'),
 (2, 'chameleos-waist-s', 'peak-performance'),
-(1, 'chameleos-legs-s', 'chameleos-blessing'),
 (1, 'chameleos-legs-s', 'evade-window'),
 (2, 'kushala-daora-head-s', 'handicraft'),
-(2, 'kushala-daora-head-s', 'normal-rapid-up');        
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'kushala-daora-head-s', 'normal-rapid-up'),
 (1, 'kushala-daora-body-s', 'diversion'),
-(1, 'kushala-daora-body-s', 'kushala-blessing'),
 (1, 'kushala-daora-body-s', 'recovery-speed'),
-(1, 'kushala-daora-arms-s', 'kushala-blessing'),
 (1, 'kushala-daora-arms-s', 'recovery-speed'),
 (2, 'kushala-daora-arms-s', 'agitator'),
-(1, 'kushala-daora-waist-s', 'handicraft'),
-(1, 'kushala-daora-waist-s', 'kushala-blessing'),
+(1, 'kushala-daora-waist-s', 'handicraft');        
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'kushala-daora-waist-s', 'pierce-up'),
 (1, 'kushala-daora-waist-s', 'recovery-speed'),
 (1, 'kushala-daora-legs-s', 'handicraft'),
-(1, 'kushala-daora-legs-s', 'kushala-blessing'),
 (1, 'kushala-daora-legs-s', 'pierce-up'),
 (1, 'teostra-head-s', 'critical-boost'),
 (3, 'teostra-head-s', 'critical-eye'),
 (1, 'teostra-body-s', 'critical-eye'),
-(1, 'teostra-body-s', 'master-s-touch'),
-(1, 'teostra-body-s', 'teostra-blessing'),
 (1, 'teostra-arms-s', 'critical-boost'),
 (1, 'teostra-arms-s', 'critical-eye'),
-(1, 'teostra-arms-s', 'teostra-blessing'),
 (1, 'teostra-waist-s', 'critical-eye'),
+(1, 'chameleos-body-s', 'chameleos-blessing'),
+(1, 'chameleos-arms-s', 'chameleos-blessing'),
+(1, 'chameleos-waist-s', 'chameleos-blessing'),
+(1, 'chameleos-legs-s', 'chameleos-blessing'),
+(1, 'kushala-daora-body-s', 'kushala-blessing'),
+(1, 'kushala-daora-arms-s', 'kushala-blessing'),
+(1, 'kushala-daora-waist-s', 'kushala-blessing'),
+(1, 'kushala-daora-legs-s', 'kushala-blessing'),
+(1, 'teostra-body-s', 'master-s-touch'),
+(1, 'teostra-body-s', 'teostra-blessing'),
+(1, 'teostra-arms-s', 'teostra-blessing'),
 (1, 'teostra-waist-s', 'teostra-blessing'),
 (1, 'teostra-legs-s', 'master-s-touch'),
-(1, 'teostra-legs-s', 'teostra-blessing');
+(1, 'teostra-legs-s', 'teostra-blessing'),
+(4, 'flame-seal-head-s', 'critical-eye'),
+(1, 'feather-of-mastery-head-s', 'carving-master');  
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -1604,7 +1608,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 108 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 109 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -1715,14 +1719,15 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('master-s-touch', 'Increases elemental damage (fire, water, thunder, ice, dragon) when landing critical hits.', 3, 3, 'Master''s Touch'),
 ('chameleos-blessing', 'Gain the power of the elder dragon Chameleos.', 4, 4, 'Chameleos Blessing'),
 ('kushala-blessing', 'Gain the power of the elder dragon Kushala Daora.', 4, 4, 'Kushala Blessing'),
-('teostra-blessing', 'Gain the power of the elder dragon Teostra.', 4, 4, 'Teostra Blessing');        
+('teostra-blessing', 'Gain the power of the elder dragon Teostra.', 4, 4, 'Teostra Blessing'),
+('carving-master', 'Lets you carve one additional time. (No effect when joining mid-quest.)', 1, 1, 'Carving Master'); 
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 351 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 352 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -2079,7 +2084,8 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('teostra-blessing', 'Fire attack and blast buildup +5%', 1),
 ('teostra-blessing', 'Fire attack and blast buildup +10%', 2),
 ('teostra-blessing', 'Also prevents poison and venom.', 3),
-('teostra-blessing', 'Also negates theft.', 4); 
+('teostra-blessing', 'Also negates theft.', 4),
+('carving-master', 'Activates skill effect.', 1);               
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
