@@ -484,7 +484,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('pukei-pukei-body-s', 1, 50, 1, 0, 0, 1, 0, 0, 0, 'Pukei-Pukei Mail S', 5, 'Pukei-Pukei', '1', -3, 3, NULL),
 ('pukei-pukei-arms-s', 2, 50, 1, 0, 0, 0, 1, 0, 0, 'Pukei-Pukei Braces S', 5, 'Pukei-Pukei', '1', -3, 3, NULL),
 ('pukei-pukei-waist-s', 3, 50, 1, 0, 0, 1, 1, 0, 0, 'Pukei-Pukei Coil S', 5, 'Pukei-Pukei', '1', -3, 3, NULL),
-('pukei-pukei-legs-s', 4, 50, 1, 0, 0, 1, 1, 0, 0, 'Pukei-Pukei Greaves S', 5, 'Pukei-Pukei', '1', -3, 3, NULL),
+('pukei-pukei-legs-s', 4, 50, 1, 0, 0, 3, 0, 0, 0, 'Pukei Greaves S', 5, 'Pukei-Pukei', '1', -3, 3, NULL),
 ('rathian-head-s', 0, 52, -3, 3, 0, 1, 1, 0, 0, 'Rathian Helm S', 5, 'Rathian', '1', -2, 0, NULL),
 ('rathian-body-s', 1, 52, -3, 3, 0, 2, 0, 1, 0, 'Rathian Mail S', 5, 'Rathian', '1', -2, 0, NULL),
 ('rathian-arms-s', 2, 52, -3, 3, 0, 2, 0, 0, 0, 'Rathian Braces S', 5, 'Rathian', '1', -2, 0, NULL),
@@ -508,10 +508,10 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('somnacanth-legs-s', 4, 58, 1, -1, 0, 2, 0, 0, 0, 'Somnacanth Greaves S', 5, 'Somnacanth', '1', -3, 2, NULL),
 ('tobi-kadachi-head-s', 0, 58, 0, 0, 0, 2, 0, 0, 0, 'Kadachi Helm S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL),
 ('tobi-kadachi-body-s', 1, 58, 0, 0, 0, 0, 0, 1, 0, 'Tobi-Kadachi Mail S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL),
-('tobi-kadachi-arms-s', 2, 58, 0, 0, 0, 0, 0, 1, 0, 'Tobi-Kadachi Braces S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL);          
+('tobi-kadachi-arms-s', 2, 58, 0, 0, 0, 0, 1, 0, 0, 'Tobi-Kadachi Braces S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL);
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('tobi-kadachi-waist-s', 3, 58, 0, 0, 0, 2, 0, 0, 0, 'Tobi-Kadachi Coil S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL),
-('tobi-kadachi-legs-s', 4, 58, 0, 0, 0, 1, 0, 1, 0, 'Kadachi Greaves S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL),
+('tobi-kadachi-legs-s', 4, 58, 0, 0, 0, 1, 1, 0, 0, 'Kadachi Greaves S', 5, 'Tobi-Kadachi', '1', 3, -3, NULL),
 ('uroktor-body-s', 1, 52, 0, 4, -1, 0, 1, 0, 0, 'Uroktor Torso S', 5, 'Uroktor', '1', 0, -2, NULL),
 ('uroktor-waist-s', 3, 52, 0, 4, -1, 1, 1, 0, 0, 'Uroktor Coil S', 5, 'Uroktor', '1', 0, -2, NULL),
 ('vaik-head-s', 0, 52, 0, 0, -1, 2, 0, 0, 0, 'Vaik Helm S', 5, 'Vaik', '1', -2, 3, NULL),
