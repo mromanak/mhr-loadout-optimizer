@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 592 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
+-- 607 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -632,7 +632,22 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('teostra-waist-s', 3, 74, -3, 4, -1, 0, 0, 1, 0, 'Kaiser Coil', 7, 'Teostra', '1', 1, -4, NULL),
 ('teostra-legs-s', 4, 74, -3, 4, -1, 1, 0, 0, 0, 'Kaiser Greaves', 7, 'Teostra', '1', 1, -4, NULL),
 ('flame-seal-head-s', 0, 56, 0, 3, 0, 0, 0, 0, 0, 'Flame Seal', 7, 'Flame Seal', '1', 0, 0, NULL),
-('feather-of-mastery-head-s', 0, 56, 0, 0, 0, 0, 0, 0, 0, 'Feather of Mastery', 7, 'Feather of Mastery', '1', 0, 0, NULL);  
+('feather-of-mastery-head-s', 0, 56, 0, 0, 0, 0, 0, 0, 0, 'Feather of Mastery', 7, 'Feather of Mastery', '1', 0, 0, NULL),
+('thunder-serpent-narwa-upgraded-head-s', 0, 76, -4, 2, -3, 0, 0, 0, 0, 'Narwa''s Helm (Upgraded)', 7, 'Thunder Serpent Narwa (Upgraded)', '1', 4, 1, NULL),
+('thunder-serpent-narwa-upgraded-body-s', 1, 76, -4, 2, -3, 0, 0, 0, 0, 'Narwa Breastplate (Upgraded)', 7, 'Thunder Serpent Narwa (Upgraded)', '1', 4, 1, NULL),
+('thunder-serpent-narwa-upgraded-arms-s', 2, 76, -4, 2, -3, 0, 0, 0, 0, 'Narwa''s Pauldrons (Upgraded)', 7, 'Thunder Serpent Narwa (Upgraded)', '1', 4, 1, NULL),
+('thunder-serpent-narwa-upgraded-waist-s', 3, 76, -4, 2, -3, 0, 0, 0, 0, 'Narwa''s Fauld (Upgraded)', 7, 'Thunder Serpent Narwa (Upgraded)', '1', 4, 1, NULL),
+('thunder-serpent-narwa-upgraded-legs-s', 4, 76, -4, 2, -3, 0, 0, 0, 0, 'Foot of Narwa (Upgraded)', 7, 'Thunder Serpent Narwa (Upgraded)', '1', 4, 1, NULL),
+('wind-serpent-ibushi-upgraded-head-s', 0, 66, -2, -1, 0, 0, 0, 0, 0, 'Ibushi''s Helm (Upgraded)', 7, 'Wind Serpent Ibushi (Upgraded)', '1', 0, 0, NULL),
+('wind-serpent-ibushi-upgraded-body-s', 1, 66, -2, -1, 0, 0, 0, 0, 0, 'Ibushi''s Breastplate (Upgraded)', 7, 'Wind Serpent Ibushi (Upgraded)', '1', 0, 0, NULL),
+('wind-serpent-ibushi-upgraded-arms-s', 2, 66, -2, -1, 0, 0, 0, 0, 0, 'Ibushi''s Pauldrons (Upgraded)', 7, 'Wind Serpent Ibushi (Upgraded)', '1', 0, 0, NULL),
+('wind-serpent-ibushi-upgraded-waist-s', 3, 66, -2, -1, 0, 0, 0, 0, 0, 'Ibushi''s Fauld (Upgraded)', 7, 'Wind Serpent Ibushi (Upgraded)', '1', 0, 0, NULL),
+('wind-serpent-ibushi-upgraded-legs-s', 4, 66, -2, -1, 0, 0, 0, 0, 0, 'Foot of Ibushi (Upgraded)', 7, 'Wind Serpent Ibushi (Upgraded)', '1', 0, 0, NULL),
+('valstrax-head-s', 0, 80, 3, -2, -2, 1, 1, 0, 0, 'Valstrax Helm', 7, 'Valstrax', '1', -2, -2, NULL),
+('valstrax-body-s', 1, 80, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Mail', 7, 'Valstrax', '1', -2, -2, NULL),
+('valstrax-arms-s', 2, 80, 3, -2, -2, 0, 1, 0, 0, 'Valstrax Braces', 7, 'Valstrax', '1', -2, -2, NULL),
+('valstrax-waist-s', 3, 80, 3, -2, -2, 0, 1, 0, 0, 'Valstrax Coil', 7, 'Valstrax', '1', -2, -2, NULL),
+('valstrax-legs-s', 4, 80, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Greaves', 7, 'Valstrax', '1', -2, -2, NULL);  
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -640,7 +655,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 909 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
+-- 960 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -1559,7 +1574,58 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'teostra-legs-s', 'master-s-touch'),
 (1, 'teostra-legs-s', 'teostra-blessing'),
 (4, 'flame-seal-head-s', 'critical-eye'),
-(1, 'feather-of-mastery-head-s', 'carving-master');  
+(1, 'feather-of-mastery-head-s', 'carving-master'),
+(1, 'thunder-serpent-narwa-upgraded-head-s', 'offensive-guard'),
+(1, 'thunder-serpent-narwa-upgraded-head-s', 'rapid-morph'),
+(1, 'thunder-serpent-narwa-upgraded-head-s', 'storm-soul'),
+(1, 'thunder-serpent-narwa-upgraded-head-s', 'thunder-alignment'),
+(1, 'thunder-serpent-narwa-upgraded-body-s', 'constitution'),
+(1, 'thunder-serpent-narwa-upgraded-body-s', 'critical-draw'),
+(1, 'thunder-serpent-narwa-upgraded-body-s', 'storm-soul'),
+(1, 'thunder-serpent-narwa-upgraded-body-s', 'thunder-alignment'),
+(1, 'thunder-serpent-narwa-upgraded-arms-s', 'guard'),
+(1, 'thunder-serpent-narwa-upgraded-arms-s', 'partbreaker'),
+(1, 'thunder-serpent-narwa-upgraded-arms-s', 'storm-soul'),
+(1, 'thunder-serpent-narwa-upgraded-arms-s', 'thunder-alignment'),
+(1, 'thunder-serpent-narwa-upgraded-waist-s', 'artillery'),
+(1, 'thunder-serpent-narwa-upgraded-waist-s', 'guard'),
+(1, 'thunder-serpent-narwa-upgraded-waist-s', 'storm-soul'),
+(1, 'thunder-serpent-narwa-upgraded-waist-s', 'thunder-alignment'),
+(1, 'thunder-serpent-narwa-upgraded-legs-s', 'evade-window'),
+(1, 'thunder-serpent-narwa-upgraded-legs-s', 'marathon-runner'),
+(1, 'thunder-serpent-narwa-upgraded-legs-s', 'storm-soul'),
+(1, 'thunder-serpent-narwa-upgraded-legs-s', 'thunder-alignment'),
+(1, 'wind-serpent-ibushi-upgraded-head-s', 'evade-extender'),
+(1, 'wind-serpent-ibushi-upgraded-head-s', 'focus'),
+(1, 'wind-serpent-ibushi-upgraded-head-s', 'storm-soul'),
+(1, 'wind-serpent-ibushi-upgraded-head-s', 'wind-alignment'),
+(1, 'wind-serpent-ibushi-upgraded-body-s', 'flinch-free'),
+(1, 'wind-serpent-ibushi-upgraded-body-s', 'guard'),
+(1, 'wind-serpent-ibushi-upgraded-body-s', 'storm-soul'),
+(1, 'wind-serpent-ibushi-upgraded-body-s', 'wind-alignment'),
+(1, 'wind-serpent-ibushi-upgraded-arms-s', 'constitution'),
+(1, 'wind-serpent-ibushi-upgraded-arms-s', 'stamina-surge'),
+(1, 'wind-serpent-ibushi-upgraded-arms-s', 'storm-soul'),
+(1, 'wind-serpent-ibushi-upgraded-arms-s', 'wind-alignment'),
+(1, 'wind-serpent-ibushi-upgraded-waist-s', 'evade-window'),
+(1, 'wind-serpent-ibushi-upgraded-waist-s', 'power-prolonger'),
+(1, 'wind-serpent-ibushi-upgraded-waist-s', 'storm-soul'),
+(1, 'wind-serpent-ibushi-upgraded-waist-s', 'wind-alignment'),
+(1, 'wind-serpent-ibushi-upgraded-legs-s', 'guard-up'),
+(1, 'wind-serpent-ibushi-upgraded-legs-s', 'slugger'),
+(1, 'wind-serpent-ibushi-upgraded-legs-s', 'storm-soul'),
+(1, 'wind-serpent-ibushi-upgraded-legs-s', 'wind-alignment'),
+(1, 'valstrax-head-s', 'dragonheart'),
+(1, 'valstrax-head-s', 'weakness-exploit'),
+(1, 'valstrax-body-s', 'dragonheart'),
+(2, 'valstrax-body-s', 'resuscitate'),
+(1, 'valstrax-arms-s', 'dragonheart'),
+(2, 'valstrax-arms-s', 'weakness-exploit'),
+(1, 'valstrax-waist-s', 'dragonheart'),
+(1, 'valstrax-waist-s', 'resuscitate'),
+(2, 'valstrax-waist-s', 'resentment'),
+(1, 'valstrax-legs-s', 'dragonheart'),
+(1, 'valstrax-legs-s', 'resentment');         
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -1608,7 +1674,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 109 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 111 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -1720,14 +1786,16 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('chameleos-blessing', 'Gain the power of the elder dragon Chameleos.', 4, 4, 'Chameleos Blessing'),
 ('kushala-blessing', 'Gain the power of the elder dragon Kushala Daora.', 4, 4, 'Kushala Blessing'),
 ('teostra-blessing', 'Gain the power of the elder dragon Teostra.', 4, 4, 'Teostra Blessing'),
-('carving-master', 'Lets you carve one additional time. (No effect when joining mid-quest.)', 1, 1, 'Carving Master'); 
+('carving-master', 'Lets you carve one additional time. (No effect when joining mid-quest.)', 1, 1, 'Carving Master'),
+('dragonheart', 'Draconic energy fills you after losing a certain amount of health. Weapons lose all non-dragon effects.', 5, 5, 'Dragonheart'),
+('storm-soul', 'Strengthens thunder and dragon power and improves skills of the same elements.', 5, 5, 'Storm Soul');          
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 352 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 362 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -2085,7 +2153,17 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('teostra-blessing', 'Fire attack and blast buildup +10%', 2),
 ('teostra-blessing', 'Also prevents poison and venom.', 3),
 ('teostra-blessing', 'Also negates theft.', 4),
-('carving-master', 'Activates skill effect.', 1);               
+('carving-master', 'Activates skill effect.', 1),
+('dragonheart', 'When your health is at 50% or less, you contract dragonblight, and all elemental resistances are set to 30.', 1),
+('dragonheart', 'When your health is at 50% or less, you contract dragonblight, and all elemental resistances are set to 50.', 2),
+('dragonheart', 'When your health is at 70% or less, you contract dragonblight, and all elemental resistances are set to 50.', 3),
+('dragonheart', 'Contract dragonblight when at 70% health or less. Sets Elemental resistances to 50 and gain +5% attack power.', 4),
+('dragonheart', 'Contract dragonblight when at 80% health or less. Sets Elemental resistances to 50 and gain +10% attack power.', 5),
+('storm-soul', 'Thunder and dragon attack +5%', 1),
+('storm-soul', 'Thunder and dragon attack +10%', 2),
+('storm-soul', 'Thunder and dragon attack +15%', 3),
+('storm-soul', 'Also increases level of other skills by +1.', 4),
+('storm-soul', 'Also increases level of other skills by +1 (stacks with previous bonus).', 5);            
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
