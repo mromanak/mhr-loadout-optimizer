@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 607 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
+-- 612 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -647,7 +647,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('valstrax-body-s', 1, 80, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Mail', 7, 'Valstrax', '1', -2, -2, NULL),
 ('valstrax-arms-s', 2, 80, 3, -2, -2, 0, 1, 0, 0, 'Valstrax Braces', 7, 'Valstrax', '1', -2, -2, NULL),
 ('valstrax-waist-s', 3, 80, 3, -2, -2, 0, 1, 0, 0, 'Valstrax Coil', 7, 'Valstrax', '1', -2, -2, NULL),
-('valstrax-legs-s', 4, 80, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Greaves', 7, 'Valstrax', '1', -2, -2, NULL);  
+('valstrax-legs-s', 4, 80, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Greaves', 7, 'Valstrax', '1', -2, -2, NULL),
+('azure-age-head-s', 0, 72, 2, 2, 0, 1, 1, 0, 0, 'Azure Age Hair', 7, 'Azure Age', '1', 0, 2, NULL),
+('azure-age-body-s', 1, 72, 2, 2, 0, 0, 1, 0, 0, 'Azure Age Haori', 7, 'Azure Age', '1', 0, 2, NULL),
+('azure-age-arms-s', 2, 72, 2, 2, 0, 1, 0, 0, 0, 'Azure Age Sleeve', 7, 'Azure Age', '1', 0, 2, NULL),
+('azure-age-waist-s', 3, 72, 2, 2, 0, 1, 0, 1, 0, 'Azure Age Obi', 7, 'Azure Age', '1', 0, 2, NULL),
+('azure-age-legs-s', 4, 72, 2, 2, 0, 1, 1, 0, 0, 'Azure Age Geta', 7, 'Azure Age', '1', 0, 2, NULL);      
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -655,7 +660,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 960 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
+-- 972 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -1625,7 +1630,20 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'valstrax-waist-s', 'resuscitate'),
 (2, 'valstrax-waist-s', 'resentment'),
 (1, 'valstrax-legs-s', 'dragonheart'),
-(1, 'valstrax-legs-s', 'resentment');         
+(1, 'valstrax-legs-s', 'resentment'),
+(2, 'azure-age-head-s', 'constitution');
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'azure-age-head-s', 'water-attack'),
+(1, 'azure-age-body-s', 'weakness-exploit'),
+(2, 'azure-age-body-s', 'constitution'),
+(1, 'azure-age-arms-s', 'constitution'),
+(1, 'azure-age-arms-s', 'weakness-exploit'),
+(2, 'azure-age-arms-s', 'critical-element'),
+(1, 'azure-age-waist-s', 'critical-element'),
+(1, 'azure-age-waist-s', 'quick-sheath'),
+(2, 'azure-age-waist-s', 'water-attack'),
+(1, 'azure-age-legs-s', 'focus'),
+(2, 'azure-age-legs-s', 'quick-sheath'); 
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
