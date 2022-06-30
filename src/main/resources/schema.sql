@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 612 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
+-- 652 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;            
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -652,7 +652,48 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('azure-age-body-s', 1, 72, 2, 2, 0, 0, 1, 0, 0, 'Azure Age Haori', 7, 'Azure Age', '1', 0, 2, NULL),
 ('azure-age-arms-s', 2, 72, 2, 2, 0, 1, 0, 0, 0, 'Azure Age Sleeve', 7, 'Azure Age', '1', 0, 2, NULL),
 ('azure-age-waist-s', 3, 72, 2, 2, 0, 1, 0, 1, 0, 'Azure Age Obi', 7, 'Azure Age', '1', 0, 2, NULL),
-('azure-age-legs-s', 4, 72, 2, 2, 0, 1, 1, 0, 0, 'Azure Age Geta', 7, 'Azure Age', '1', 0, 2, NULL);      
+('azure-age-legs-s', 4, 72, 2, 2, 0, 1, 1, 0, 0, 'Azure Age Geta', 7, 'Azure Age', '1', 0, 2, NULL),
+('kamura-legacy-head-x', 0, 80, 0, 2, 0, 0, 1, 0, 0, 'Kamura Legacy Head Scarf', 8, 'Kamura Legacy', '2', 0, 0, NULL),
+('kamura-legacy-body-x', 1, 80, 0, 2, 0, 2, 0, 0, 0, 'Kamura Legacy Garb', 8, 'Kamura Legacy', '2', 0, 0, NULL),
+('kamura-legacy-arms-x', 2, 80, 0, 2, 0, 1, 0, 0, 0, 'Kamura Legacy Braces', 8, 'Kamura Legacy', '2', 0, 0, NULL),
+('kamura-legacy-waist-x', 3, 80, 0, 2, 0, 1, 0, 0, 1, 'Kamura Legacy Obi', 8, 'Kamura Legacy', '2', 0, 0, NULL),
+('kamura-legacy-legs-x', 4, 80, 0, 2, 0, 0, 1, 0, 0, 'Kamura Legacy Leggings', 8, 'Kamura Legacy', '2', 0, 0, NULL),
+('leather-head-x', 0, 80, 0, 0, 0, 1, 0, 0, 1, 'Leather Headgear X', 8, 'Leather', '2', 0, 0, NULL),
+('leather-body-x', 1, 80, 0, 0, 0, 0, 0, 0, 1, 'Leather Vest X', 8, 'Leather', '2', 0, 0, NULL),
+('leather-arms-x', 2, 80, 0, 0, 0, 1, 0, 0, 1, 'Leather Gloves X', 8, 'Leather', '2', 0, 0, NULL),
+('leather-waist-x', 3, 80, 0, 0, 0, 1, 1, 0, 0, 'Leather Belt X', 8, 'Leather', '2', 0, 0, NULL),
+('leather-legs-x', 4, 80, 0, 0, 0, 1, 0, 0, 1, 'Leather Trousers X', 8, 'Leather', '2', 0, 0, NULL);     
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('chainmail-head-x', 0, 82, 0, 0, 0, 0, 0, 0, 1, 'Chainmail Headgear X', 8, 'Chainmail', '2', 1, 0, NULL),
+('chainmail-body-x', 1, 82, 0, 0, 0, 0, 0, 0, 1, 'Chainmail Vest X', 8, 'Chainmail', '2', 1, 0, NULL),
+('chainmail-arms-x', 2, 82, 0, 0, 0, 1, 0, 0, 1, 'Chainmail Gloves X', 8, 'Chainmail', '2', 1, 0, NULL),
+('chainmail-waist-x', 3, 82, 0, 0, 0, 3, 0, 0, 0, 'Chainmail Belt X', 8, 'Chainmail', '2', 1, 0, NULL),
+('chainmail-legs-x', 4, 82, 0, 0, 0, 3, 0, 0, 0, 'Chainmail Pants X', 8, 'Chainmail', '2', 1, 0, NULL),
+('hunter-head-x', 0, 82, 0, 0, 0, 0, 1, 0, 0, 'Hunter''s Helm X', 8, 'Hunter', '2', 0, 0, NULL),
+('hunter-body-x', 1, 82, 0, 0, 0, 1, 0, 0, 0, 'Hunter''s Mail X', 8, 'Hunter', '2', 0, 0, NULL),
+('hunter-arms-x', 2, 82, 0, 0, 0, 0, 1, 0, 0, 'Hunter''s Vambraces X', 8, 'Hunter', '2', 0, 0, NULL),
+('hunter-waist-x', 3, 82, 0, 0, 0, 2, 0, 0, 0, 'Hunter''s Coil X', 8, 'Hunter', '2', 0, 0, NULL),
+('hunter-legs-x', 4, 82, 0, 0, 0, 0, 1, 0, 0, 'Hunter''s Greaves X', 8, 'Hunter', '2', 0, 0, NULL),
+('bone-head-x', 0, 82, 0, 0, -1, 0, 0, 0, 1, 'Bone Helm X', 8, 'Bone', '2', 0, 0, NULL),
+('bone-body-x', 1, 82, 0, 0, -1, 0, 0, 1, 0, 'Bone Mail X', 8, 'Bone', '2', 0, 0, NULL),
+('bone-arms-x', 2, 82, 0, 0, -1, 2, 0, 0, 0, 'Bone Vambraces X', 8, 'Bone', '2', 0, 0, NULL),
+('bone-waist-x', 3, 82, 0, 0, -1, 1, 1, 0, 0, 'Bone Coil X', 8, 'Bone', '2', 0, 0, NULL),
+('bone-legs-x', 4, 82, 0, 0, -1, 0, 1, 0, 0, 'Bone Greaves X', 8, 'Bone', '2', 0, 0, NULL),
+('bnahabra-head-x', 0, 82, 2, -2, 0, 1, 0, 0, 1, 'Bnahabra Hat X', 8, 'Bnahabra', '2', 0, 0, NULL),
+('bnahabra-body-x', 1, 82, 2, -2, 0, 1, 0, 1, 0, 'Bnahabra Suit X', 8, 'Bnahabra', '2', 0, 0, NULL),
+('bnahabra-arms-x', 2, 82, 2, -2, 0, 0, 0, 0, 1, 'Bnahabra Gloves X', 8, 'Bnahabra', '2', 0, 0, NULL),
+('bnahabra-waist-x', 3, 82, 2, -2, 0, 1, 0, 1, 0, 'Bnahabra Coil X', 8, 'Bnahabra', '2', 0, 0, NULL),
+('bnahabra-legs-x', 4, 82, 2, -2, 0, 1, 0, 0, 1, 'Bnahabra Boots X', 8, 'Bnahabra', '2', 0, 0, NULL),
+('velociprey-head-x', 0, 86, 0, 0, -2, 1, 0, 0, 1, 'Velociprey Helm', 8, 'Velociprey', '2', 0, 0, NULL),
+('velociprey-body-x', 1, 86, 0, 0, -2, 1, 0, 0, 1, 'Velociprey Mail', 8, 'Velociprey', '2', 0, 0, NULL),
+('velociprey-arms-x', 2, 86, 0, 0, -2, 1, 0, 1, 0, 'Velociprey Braces', 8, 'Velociprey', '2', 0, 0, NULL),
+('velociprey-waist-x', 3, 86, 0, 0, -2, 0, 0, 0, 1, 'Velociprey Tassets', 8, 'Velociprey', '2', 0, 0, NULL),
+('velociprey-legs-x', 4, 86, 0, 0, -2, 0, 1, 1, 0, 'Velociprey Greaves', 8, 'Velociprey', '2', 0, 0, NULL),
+('hermitaur-head-x', 0, 86, 0, 0, -2, 1, 0, 0, 0, 'Hermitaur Helm', 8, 'Hermitaur', '2', 0, 0, NULL),
+('hermitaur-body-x', 1, 86, 0, 0, -2, 1, 0, 0, 0, 'Hermitaur Mail', 8, 'Hermitaur', '2', 0, 0, NULL),
+('hermitaur-arms-x', 2, 86, 0, 0, -2, 0, 1, 0, 0, 'Hermitaur Braces', 8, 'Hermitaur', '2', 0, 0, NULL),
+('hermitaur-waist-x', 3, 86, 0, 0, -2, 0, 2, 0, 0, 'Hermitaur Coil', 8, 'Hermitaur', '2', 0, 0, NULL),
+('hermitaur-legs-x', 4, 86, 0, 0, -2, 0, 0, 0, 1, 'Hermitaur Greaves', 8, 'Hermitaur', '2', 0, 0, NULL); 
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -660,7 +701,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 972 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;      
+-- 1068 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -1643,7 +1684,104 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'azure-age-waist-s', 'quick-sheath'),
 (2, 'azure-age-waist-s', 'water-attack'),
 (1, 'azure-age-legs-s', 'focus'),
-(2, 'azure-age-legs-s', 'quick-sheath'); 
+(2, 'azure-age-legs-s', 'quick-sheath'),
+(1, 'kamura-legacy-head-x', 'resuscitate'),
+(2, 'kamura-legacy-head-x', 'divine-blessing'),
+(1, 'kamura-legacy-body-x', 'critical-eye'),
+(1, 'kamura-legacy-body-x', 'wall-runner'),
+(2, 'kamura-legacy-body-x', 'wirebug-whisperer'),
+(1, 'kamura-legacy-arms-x', 'divine-blessing'),
+(1, 'kamura-legacy-arms-x', 'heroics'),
+(2, 'kamura-legacy-arms-x', 'critical-eye'),
+(1, 'kamura-legacy-waist-x', 'critical-eye'),
+(1, 'kamura-legacy-waist-x', 'wirebug-whisperer'),
+(1, 'kamura-legacy-legs-x', 'affinity-sliding'),
+(1, 'kamura-legacy-legs-x', 'resuscitate'),
+(2, 'kamura-legacy-legs-x', 'wall-runner'),
+(1, 'leather-head-x', 'carving-pro'),
+(1, 'leather-head-x', 'geologist'),
+(1, 'leather-head-x', 'hunger-resistance'),
+(1, 'leather-body-x', 'recovery-up'),
+(2, 'leather-body-x', 'botanist'),
+(1, 'leather-arms-x', 'geologist'),
+(1, 'leather-arms-x', 'special-ammo-boost'),
+(2, 'leather-waist-x', 'hunger-resistance'),
+(2, 'leather-waist-x', 'recovery-up'),
+(1, 'leather-legs-x', 'geologist'),
+(2, 'leather-legs-x', 'botanist'),
+(1, 'chainmail-head-x', 'stamina-surge'),
+(2, 'chainmail-head-x', 'defense-boost'),
+(1, 'chainmail-body-x', 'defense-boost'),
+(1, 'chainmail-body-x', 'guard'),
+(2, 'chainmail-body-x', 'flinch-free'),
+(1, 'chainmail-arms-x', 'stamina-surge'),
+(2, 'chainmail-arms-x', 'defense-boost'),
+(1, 'chainmail-waist-x', 'flinch-free'),
+(2, 'chainmail-waist-x', 'defense-boost'),
+(2, 'chainmail-waist-x', 'guard'),
+(1, 'chainmail-legs-x', 'stamina-surge'),
+(2, 'chainmail-legs-x', 'guard'),
+(1, 'hunter-head-x', 'item-prolonger'),
+(2, 'hunter-head-x', 'attack-boost'),
+(1, 'hunter-body-x', 'attack-boost'),
+(1, 'hunter-body-x', 'handicraft'),
+(1, 'hunter-body-x', 'item-prolonger'),
+(1, 'hunter-arms-x', 'ammo-up'),
+(1, 'hunter-arms-x', 'handicraft'),
+(1, 'hunter-arms-x', 'quick-sheath'),
+(1, 'hunter-waist-x', 'handicraft'),
+(1, 'hunter-waist-x', 'item-prolonger'),
+(2, 'hunter-waist-x', 'stun-resistance'),
+(1, 'hunter-legs-x', 'quick-sheath'),
+(1, 'hunter-legs-x', 'stun-resistance'),
+(2, 'hunter-legs-x', 'attack-boost'),
+(1, 'bone-head-x', 'partbreaker'),
+(1, 'bone-head-x', 'stamina-thief'),
+(1, 'bone-body-x', 'stamina-thief'),
+(2, 'bone-body-x', 'marathon-runner'),
+(1, 'bone-arms-x', 'marathon-runner'),
+(1, 'bone-arms-x', 'stamina-thief'),
+(2, 'bone-arms-x', 'punishing-draw'),
+(1, 'bone-waist-x', 'focus'),
+(2, 'bone-waist-x', 'partbreaker'),
+(1, 'bone-legs-x', 'focus'),
+(1, 'bone-legs-x', 'punishing-draw'),
+(2, 'bone-legs-x', 'muck-resistance'),
+(1, 'bnahabra-head-x', 'poison-attack'),
+(2, 'bnahabra-head-x', 'recoil-down'),
+(1, 'bnahabra-body-x', 'paralysis-attack'),
+(2, 'bnahabra-body-x', 'evade-window'),
+(2, 'bnahabra-arms-x', 'evade-window'),
+(2, 'bnahabra-arms-x', 'poison-attack'),
+(1, 'bnahabra-waist-x', 'evade-window'),
+(2, 'bnahabra-waist-x', 'paralysis-attack'),
+(1, 'bnahabra-legs-x', 'recoil-down'),
+(2, 'bnahabra-legs-x', 'steadiness'),
+(1, 'velociprey-head-x', 'attack-boost'),
+(1, 'velociprey-head-x', 'stun-resistance'),
+(1, 'velociprey-body-x', 'attack-boost'),
+(1, 'velociprey-body-x', 'windproof'),
+(2, 'velociprey-arms-x', 'attack-boost'),
+(1, 'velociprey-waist-x', 'attack-boost'),
+(1, 'velociprey-waist-x', 'capture-master'),
+(2, 'velociprey-legs-x', 'stun-resistance'),
+(2, 'velociprey-legs-x', 'windproof'),
+(2, 'hermitaur-head-x', 'quick-sheath'),
+(2, 'hermitaur-head-x', 'tremor-resistance'),
+(1, 'hermitaur-body-x', 'ammo-up'),
+(1, 'hermitaur-body-x', 'load-shells'),
+(1, 'hermitaur-body-x', 'normal-rapid-up'),
+(3, 'hermitaur-body-x', 'guard'),
+(1, 'hermitaur-arms-x', 'guard-up'),
+(2, 'hermitaur-arms-x', 'guard'),
+(2, 'hermitaur-arms-x', 'normal-rapid-up');             
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'hermitaur-waist-x', 'handicraft'),
+(1, 'hermitaur-waist-x', 'quick-sheath'),
+(1, 'hermitaur-waist-x', 'tune-up'),
+(1, 'hermitaur-legs-x', 'handicraft'),
+(1, 'hermitaur-legs-x', 'tremor-resistance'),
+(1, 'hermitaur-legs-x', 'tune-up');
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -1692,7 +1830,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 111 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 112 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -1806,14 +1944,15 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('teostra-blessing', 'Gain the power of the elder dragon Teostra.', 4, 4, 'Teostra Blessing'),
 ('carving-master', 'Lets you carve one additional time. (No effect when joining mid-quest.)', 1, 1, 'Carving Master'),
 ('dragonheart', 'Draconic energy fills you after losing a certain amount of health. Weapons lose all non-dragon effects.', 5, 5, 'Dragonheart'),
-('storm-soul', 'Strengthens thunder and dragon power and improves skills of the same elements.', 5, 5, 'Storm Soul');          
+('storm-soul', 'Strengthens thunder and dragon power and improves skills of the same elements.', 5, 5, 'Storm Soul'),
+('tune-up', 'Increases the stats of custom mods attached to bowguns.', 2, 2, 'Tune-Up'); 
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 362 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 364 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -2181,7 +2320,9 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('storm-soul', 'Thunder and dragon attack +10%', 2),
 ('storm-soul', 'Thunder and dragon attack +15%', 3),
 ('storm-soul', 'Also increases level of other skills by +1.', 4),
-('storm-soul', 'Also increases level of other skills by +1 (stacks with previous bonus).', 5);            
+('storm-soul', 'Also increases level of other skills by +1 (stacks with previous bonus).', 5),
+('tune-up', 'Increases stats of Silencer and Shield. If neither are equipped, Reload Speed +1.', 1),
+('tune-up', 'Also increases stats of Long Barrel and Power Barrel. If neither are equipped, Reload Speed +1 and Steadiness +1.', 2);  
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL

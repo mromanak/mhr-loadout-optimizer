@@ -12,7 +12,8 @@ import static java.util.Arrays.asList;
 public enum SetType {
 
     NONE("LR", LOW_RANK),
-    S("S", HIGH_RANK);
+    S("S", HIGH_RANK),
+    X("X", MASTER_RANK);
 
     private final String name;
     private final Rank rank;
