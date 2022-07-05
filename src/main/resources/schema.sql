@@ -701,7 +701,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 1068 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
+-- 1053 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -744,9 +744,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'leather-waist-lr', 'recovery-up'),
 (1, 'leather-legs-lr', 'geologist'),
 (1, 'vaik-head-lr', 'ammo-up'),
-(1, 'vaik-body-lr', 'steadiness'),
 (1, 'vaik-arms-lr', 'normal-rapid-up'),
-(1, 'vaik-waist-lr', 'steadiness'),
 (1, 'vaik-legs-lr', 'ammo-up'),
 (1, 'aknosom-head-lr', 'fire-attack'),
 (1, 'aknosom-body-lr', 'quick-sheath'),
@@ -759,7 +757,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'alloy-waist-lr', 'critical-eye'),
 (1, 'alloy-waist-lr', 'water-attack'),
 (1, 'alloy-legs-lr', 'speed-sharpening'),
-(1, 'barioth-head-lr', 'critical-draw'),
 (1, 'barioth-body-lr', 'quick-sheath'),
 (1, 'barioth-arms-lr', 'critical-eye'),
 (2, 'barioth-waist-lr', 'critical-eye'),
@@ -802,10 +799,10 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'death-stench-waist-lr', 'dragon-resistance'),
 (1, 'death-stench-legs-lr', 'rapid-morph'),
 (1, 'droth-body-lr', 'water-resistance'),
-(1, 'droth-waist-lr', 'diversion');          
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'droth-waist-lr', 'diversion'),
 (2, 'droth-legs-lr', 'water-resistance'),
-(1, 'gargwa-head-lr', 'leap-of-faith'),
+(1, 'gargwa-head-lr', 'leap-of-faith');        
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'great-wroggi-head-lr', 'evade-extender'),
 (1, 'great-wroggi-body-lr', 'poison-attack'),
 (1, 'great-wroggi-arms-lr', 'ammo-up'),
@@ -899,10 +896,10 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'tobi-kadachi-legs-lr', 'critical-eye'),
 (2, 'uroktor-body-lr', 'fire-resistance'),
 (1, 'uroktor-waist-lr', 'fire-resistance'),
-(1, 'volvidon-head-lr', 'paralysis-attack');      
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'volvidon-head-lr', 'paralysis-attack'),
 (1, 'volvidon-body-lr', 'rapid-morph'),
-(1, 'volvidon-arms-lr', 'evade-extender'),
+(1, 'volvidon-arms-lr', 'evade-extender');     
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'volvidon-waist-lr', 'rapid-morph'),
 (1, 'volvidon-legs-lr', 'evade-extender'),
 (1, 'almudron-head-lr', 'rapid-morph'),
@@ -936,8 +933,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'diablos-legs-lr', 'guard'),
 (1, 'diablos-legs-lr', 'offensive-guard'),
 (1, 'goss-harag-head-lr', 'agitator'),
-(1, 'goss-harag-body-lr', 'critical-draw'),
-(1, 'goss-harag-arms-lr', 'critical-draw'),
 (1, 'goss-harag-arms-lr', 'punishing-draw'),
 (1, 'goss-harag-waist-lr', 'punishing-draw'),
 (1, 'goss-harag-waist-lr', 'resentment'),
@@ -995,12 +990,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'rhopessa-aelucanth-arms-lr', 'evade-window'),
 (2, 'rhopessa-aelucanth-waist-lr', 'dragon-attack'),
 (2, 'rhopessa-aelucanth-legs-lr', 'critical-eye'),
-(1, 'skull-head-lr', 'fortify'); 
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'skull-head-lr', 'fortify'),
 (1, 'spio-skalda-head-lr', 'poison-attack'),
 (1, 'spio-skalda-body-lr', 'critical-eye'),
 (1, 'spio-skalda-arms-lr', 'poison-resistance'),
-(1, 'spio-skalda-waist-lr', 'critical-eye'),
+(1, 'spio-skalda-waist-lr', 'critical-eye');     
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'spio-skalda-legs-lr', 'poison-resistance'),
 (1, 'tigrex-head-lr', 'earplugs'),
 (1, 'tigrex-head-lr', 'speed-eating'),
@@ -1099,12 +1094,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'great-baggi-arms-s', 'ice-attack'),
 (2, 'great-baggi-arms-s', 'sleep-resistance'),
 (1, 'great-baggi-waist-s', 'sleep-resistance'),
-(2, 'great-baggi-waist-s', 'attack-boost'); 
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'great-baggi-waist-s', 'attack-boost'),
 (1, 'great-baggi-legs-s', 'attack-boost'),
 (1, 'great-izuchi-head-s', 'critical-eye'),
 (1, 'great-izuchi-body-s', 'recovery-speed'),
-(2, 'great-izuchi-body-s', 'critical-eye'),
+(2, 'great-izuchi-body-s', 'critical-eye');       
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'great-izuchi-arms-s', 'constitution'),
 (2, 'great-izuchi-waist-s', 'critical-eye'),
 (1, 'great-izuchi-legs-s', 'constitution'),
@@ -1202,12 +1197,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'slagoth-head-s', 'free-meal'),
 (2, 'slagoth-body-s', 'free-meal'),
 (2, 'spio-skalda-head-s', 'poison-attack'),
-(1, 'spio-skalda-body-s', 'latent-power');       
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'spio-skalda-body-s', 'latent-power'),
 (1, 'spio-skalda-arms-s', 'latent-power'),
 (1, 'spio-skalda-arms-s', 'poison-resistance'),
 (2, 'spio-skalda-waist-s', 'weakness-exploit'),
-(1, 'spio-skalda-legs-s', 'latent-power'),
+(1, 'spio-skalda-legs-s', 'latent-power');  
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'spio-skalda-legs-s', 'mind-s-eye'),
 (1, 'spio-skalda-legs-s', 'poison-resistance'),
 (1, 'tetranodon-head-s', 'normal-rapid-up'),
@@ -1229,13 +1224,11 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'volvidon-waist-s', 'rapid-morph'),
 (1, 'volvidon-legs-s', 'rapid-morph'),
 (2, 'volvidon-legs-s', 'evade-extender'),
-(2, 'barioth-head-s', 'critical-draw'),
 (1, 'barioth-body-s', 'maximum-might'),
 (1, 'barioth-body-s', 'quick-sheath'),
 (1, 'barioth-arms-s', 'critical-eye'),
 (1, 'barioth-arms-s', 'maximum-might'),
 (1, 'barioth-arms-s', 'quick-sheath'),
-(1, 'barioth-waist-s', 'critical-draw'),
 (2, 'barioth-waist-s', 'critical-eye'),
 (1, 'barioth-legs-s', 'quick-sheath'),
 (1, 'basarios-head-s', 'load-shells'),
@@ -1299,14 +1292,14 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'jyuratodus-body-s', 'power-prolonger'),
 (1, 'jyuratodus-waist-s', 'guard-up'),
 (1, 'jyuratodus-waist-s', 'offensive-guard'),
-(1, 'jyuratodus-waist-s', 'power-prolonger');       
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'jyuratodus-waist-s', 'power-prolonger'),
 (2, 'makluva-head-s', 'sleep-resistance'),
 (3, 'makluva-body-s', 'water-attack'),
 (1, 'makluva-arms-s', 'bubbly-dance'),
 (1, 'makluva-arms-s', 'leap-of-faith'),
 (1, 'makluva-waist-s', 'sleep-resistance'),
-(1, 'makluva-legs-s', 'bubbly-dance'),
+(1, 'makluva-legs-s', 'bubbly-dance');          
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'makluva-legs-s', 'speed-eating'),
 (1, 'medium-utsushi-v-head-s', 'free-meal'),
 (1, 'medium-utsushi-v-head-s', 'good-luck'),
@@ -1398,15 +1391,15 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'almudron-legs-s', 'razor-sharp'),
 (1, 'anjanath-head-s', 'focus'),
 (1, 'anjanath-head-s', 'slugger'),
-(1, 'anjanath-body-s', 'marathon-runner');              
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'anjanath-body-s', 'marathon-runner'),
 (2, 'anjanath-body-s', 'focus'),
 (2, 'anjanath-arms-s', 'attack-boost'),
 (2, 'anjanath-arms-s', 'slugger'),
 (2, 'anjanath-waist-s', 'attack-boost'),
 (2, 'anjanath-legs-s', 'marathon-runner'),
 (2, 'brigade-head-s', 'botanist'),
-(1, 'brigade-body-s', 'capture-master'),
+(1, 'brigade-body-s', 'capture-master');      
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'brigade-body-s', 'geologist'),
 (1, 'diablos-head-s', 'guard'),
 (1, 'diablos-head-s', 'stamina-surge'),
@@ -1420,10 +1413,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'gargwa-head-s', 'good-luck'),
 (1, 'gargwa-head-s', 'leap-of-faith'),
 (1, 'goss-harag-head-s', 'agitator'),
-(1, 'goss-harag-head-s', 'critical-draw'),
-(1, 'goss-harag-body-s', 'critical-draw'),
 (1, 'goss-harag-body-s', 'resentment'),
-(1, 'goss-harag-arms-s', 'critical-draw'),
 (1, 'goss-harag-arms-s', 'punishing-draw'),
 (1, 'goss-harag-waist-s', 'punishing-draw'),
 (1, 'goss-harag-waist-s', 'resentment'),
@@ -1499,8 +1489,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'tigrex-arms-s', 'bludgeoner'),
 (2, 'tigrex-waist-s', 'earplugs'),
 (1, 'tigrex-legs-s', 'mind-s-eye'),
-(2, 'tigrex-legs-s', 'speed-eating');     
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'tigrex-legs-s', 'speed-eating'),
 (1, 'zinogre-head-s', 'latent-power'),
 (1, 'zinogre-head-s', 'weakness-exploit'),
 (1, 'zinogre-body-s', 'latent-power'),
@@ -1510,7 +1499,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'zinogre-waist-s', 'latent-power'),
 (1, 'zinogre-legs-s', 'latent-power'),
 (2, 'zinogre-legs-s', 'constitution'),
-(1, 'rajang-head-s', 'maximum-might'),
+(1, 'rajang-head-s', 'maximum-might');   
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'rajang-head-s', 'heroics'),
 (1, 'rajang-body-s', 'heroics'),
 (1, 'rajang-body-s', 'latent-power'),
@@ -1526,7 +1516,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'thunder-serpent-narwa-head-s', 'rapid-morph'),
 (1, 'thunder-serpent-narwa-head-s', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-body-s', 'constitution'),
-(1, 'thunder-serpent-narwa-body-s', 'critical-draw'),
 (1, 'thunder-serpent-narwa-body-s', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-arms-s', 'guard'),
 (1, 'thunder-serpent-narwa-arms-s', 'partbreaker'),
@@ -1593,8 +1582,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'kushala-daora-body-s', 'recovery-speed'),
 (1, 'kushala-daora-arms-s', 'recovery-speed'),
 (2, 'kushala-daora-arms-s', 'agitator'),
-(1, 'kushala-daora-waist-s', 'handicraft');        
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'kushala-daora-waist-s', 'handicraft'),
 (1, 'kushala-daora-waist-s', 'pierce-up'),
 (1, 'kushala-daora-waist-s', 'recovery-speed'),
 (1, 'kushala-daora-legs-s', 'handicraft'),
@@ -1605,7 +1593,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'teostra-arms-s', 'critical-boost'),
 (1, 'teostra-arms-s', 'critical-eye'),
 (1, 'teostra-waist-s', 'critical-eye'),
-(1, 'chameleos-body-s', 'chameleos-blessing'),
+(1, 'chameleos-body-s', 'chameleos-blessing');               
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chameleos-arms-s', 'chameleos-blessing'),
 (1, 'chameleos-waist-s', 'chameleos-blessing'),
 (1, 'chameleos-legs-s', 'chameleos-blessing'),
@@ -1626,7 +1615,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'thunder-serpent-narwa-upgraded-head-s', 'storm-soul'),
 (1, 'thunder-serpent-narwa-upgraded-head-s', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-upgraded-body-s', 'constitution'),
-(1, 'thunder-serpent-narwa-upgraded-body-s', 'critical-draw'),
 (1, 'thunder-serpent-narwa-upgraded-body-s', 'storm-soul'),
 (1, 'thunder-serpent-narwa-upgraded-body-s', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-upgraded-arms-s', 'guard'),
@@ -1672,8 +1660,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'valstrax-waist-s', 'resentment'),
 (1, 'valstrax-legs-s', 'dragonheart'),
 (1, 'valstrax-legs-s', 'resentment'),
-(2, 'azure-age-head-s', 'constitution');
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'azure-age-head-s', 'constitution'),
 (2, 'azure-age-head-s', 'water-attack'),
 (1, 'azure-age-body-s', 'weakness-exploit'),
 (2, 'azure-age-body-s', 'constitution'),
@@ -1686,7 +1673,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'azure-age-legs-s', 'focus'),
 (2, 'azure-age-legs-s', 'quick-sheath'),
 (1, 'kamura-legacy-head-x', 'resuscitate'),
-(2, 'kamura-legacy-head-x', 'divine-blessing'),
+(2, 'kamura-legacy-head-x', 'divine-blessing');  
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'kamura-legacy-body-x', 'critical-eye'),
 (1, 'kamura-legacy-body-x', 'wall-runner'),
 (2, 'kamura-legacy-body-x', 'wirebug-whisperer'),
@@ -1756,7 +1744,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'bnahabra-waist-x', 'evade-window'),
 (2, 'bnahabra-waist-x', 'paralysis-attack'),
 (1, 'bnahabra-legs-x', 'recoil-down'),
-(2, 'bnahabra-legs-x', 'steadiness'),
 (1, 'velociprey-head-x', 'attack-boost'),
 (1, 'velociprey-head-x', 'stun-resistance'),
 (1, 'velociprey-body-x', 'attack-boost'),
@@ -1774,14 +1761,11 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'hermitaur-body-x', 'guard'),
 (1, 'hermitaur-arms-x', 'guard-up'),
 (2, 'hermitaur-arms-x', 'guard'),
-(2, 'hermitaur-arms-x', 'normal-rapid-up');             
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'hermitaur-arms-x', 'normal-rapid-up'),
 (1, 'hermitaur-waist-x', 'handicraft'),
 (1, 'hermitaur-waist-x', 'quick-sheath'),
-(1, 'hermitaur-waist-x', 'tune-up'),
 (1, 'hermitaur-legs-x', 'handicraft'),
-(1, 'hermitaur-legs-x', 'tremor-resistance'),
-(1, 'hermitaur-legs-x', 'tune-up');
+(1, 'hermitaur-legs-x', 'tremor-resistance');       
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -1830,7 +1814,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 112 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 126 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -1884,7 +1868,7 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('ammo-up', 'Increases bowgun loading capacity. (There is a cap to loading capacity.)', 3, 3, 'Ammo Up'),
 ('reload-speed', 'Increases bowgun reloading and bow coating loading speed.', 3, 3, 'Reload Speed'),
 ('recoil-down', 'Reduces recoil when firing bowgun ammo.', 3, 3, 'Recoil Down'),
-('steadiness', 'Suppresses the deviation of bowgun shots.', 2, 2, 'Steadiness'),
+('steadiness', 'Suppresses the deviation of bowgun shots.', 3, 3, 'Steadiness'),
 ('rapid-fire-up', 'Improves light bowgun rapid fire.', 3, 3, 'Rapid Fire Up'),
 ('defense-boost', 'Increases defense. Resistances will also improve as the level increases.', 7, 7, 'Defense Boost'),
 ('divine-blessing', 'Has a predetermined chance of reducing the damage you take.', 3, 3, 'Divine Blessing'),
@@ -1945,14 +1929,29 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('carving-master', 'Lets you carve one additional time. (No effect when joining mid-quest.)', 1, 1, 'Carving Master'),
 ('dragonheart', 'Draconic energy fills you after losing a certain amount of health. Weapons lose all non-dragon effects.', 5, 5, 'Dragonheart'),
 ('storm-soul', 'Strengthens thunder and dragon power and improves skills of the same elements.', 5, 5, 'Storm Soul'),
-('tune-up', 'Increases the stats of custom mods attached to bowguns.', 2, 2, 'Tune-Up'); 
+('tune-up', 'Increases the stats of custom mods attached to bowguns.', 2, 2, 'Tune-Up'),
+('spiribird-s-call', 'Receive the effects of a random Spiribird at fixed intervals. (Certain quests only)', 1, 1, 'Spiribird''s Call'),
+('charge-master', 'When a charged attack hits a monster, the element and status buildup of the charged attack increases.', 3, 3, 'Charge Master');      
+INSERT INTO "PUBLIC"."SKILL" VALUES
+('grinder-s', 'When recovering sharpness, grants a boost to sharpness properties based on the number of levels recovered.', 3, 3, 'Grinder (S)'),
+('coalescence', 'Temporarily enhances attacks after recovering from blights or abnormal status.', 3, 3, 'Coalescence'),
+('bladescale-hone', 'Dodge rolling to evade an attack with your weapon drawn will recover sharpness, refill bowgun ammo, or give Close-range Coatings a temporary boost.', 3, 3, 'Bladescale Hone'),
+('wall-runner-boost', 'Wirebug Gauge recovers faster while wall running.', 1, 1, 'Wall Runner (Boost)'),
+('chain-crit', 'Continuously landing hits gradually increases attack and elemental attack. (The amount of increase depends on the weapon.)', 3, 3, 'Chain Crit'),
+('redirection', 'Perform a perfectly-timed Switch Skill Swap just as a monster attacks to reduce the damage and negate damage reactions.', 2, 2, 'Redirection'),
+('foray', 'Increases attack power and affinity when attacking a large monster affected by poison, paralysis or an elemental blight.', 3, 3, 'Foray'),
+('bloodlust', 'The effects of the Frenzy virus change. Health is gradually reduced, but you gain a variety of effects. Frenzy virus occurs regularly when in combat.', 3, 3, 'Bloodlust'),
+('blood-rite', 'A proportion of damage dealt is converted to health when striking a broken monster part.', 3, 3, 'Blood Rite'),
+('dereliction', 'Qurio will drain health, but also bolster your attacks. Multiple Qurio further bolster attacks and let you recover health when performing a Switch Skill Swap.', 3, 3, 'Dereliction'),
+('furious', 'Using the Red Scroll builds your fury while fighting monsters. Swapping to the Blue Scroll when your fury is full gives you infinite stamina temporarily.', 3, 3, 'Furious'),
+('mail-of-hellfire', 'Decreases defense but increases attack. Exact changes to stats depends on Switch Skill Swap Scroll that is being used.', 3, 3, 'Mail of Hellfire');   
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 364 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 402 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -2088,12 +2087,12 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('offensive-guard', 'Attack +5% while active.', 1),
 ('offensive-guard', 'Attack +10% while active.', 2),
 ('offensive-guard', 'Attack +15% while active.', 3),
-('critical-draw', 'Affinity +10%', 1),
-('critical-draw', 'Affinity +20%', 2),
-('critical-draw', 'Affinity +40%', 3),
+('critical-draw', 'Affinity +15%.', 1),
+('critical-draw', 'Affinity +30%.', 2),
+('critical-draw', 'Affinity +60%.', 3),
 ('punishing-draw', 'Applies a minor chance to stun. Attack power of draw attacks +3', 1),
 ('punishing-draw', 'Applies a chance to stun. Attack power of draw attacks +5', 2),
-('punishing-draw', 'Applies a great chance to stun. Attack power of draw attacks +7', 3);         
+('punishing-draw', 'Applies a great chance to stun. Attack power of draw attacks +7', 3);      
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('quick-sheath', 'Slightly increases sheathing speed.', 1),
 ('quick-sheath', 'Moderately increases sheathing speed.', 2),
@@ -2131,8 +2130,8 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('recoil-down', 'Recoil -1', 1),
 ('recoil-down', 'Recoil -2', 2),
 ('recoil-down', 'Recoil -3', 3),
-('steadiness', 'Deviation -1', 1),
-('steadiness', 'Deviation -2', 2),
+('steadiness', 'Deviation -1.', 1),
+('steadiness', 'Deviation -2.', 2),
 ('rapid-fire-up', 'Rapid fire damage +5%', 1),
 ('rapid-fire-up', 'Rapid fire damage +10%', 2),
 ('rapid-fire-up', 'Rapid fire damage +20%', 3),
@@ -2157,7 +2156,7 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('speed-eating', 'Greatly increases eating speed.', 3),
 ('earplugs', 'Reduces the effects of weak monster roars.', 1),
 ('earplugs', 'Nullifies weak monster roars.', 2),
-('earplugs', 'Nullifies weak monster roars and reduces the effects of strong monster roars.', 3);    
+('earplugs', 'Nullifies weak monster roars and reduces the effects of strong monster roars.', 3);  
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('earplugs', 'Nullifies weak and strong monster roars.', 4),
 ('earplugs', 'Nullifies weak and strong monster roars. Reduces the effects of powerful monster roars.', 5),
@@ -2322,7 +2321,46 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('storm-soul', 'Also increases level of other skills by +1.', 4),
 ('storm-soul', 'Also increases level of other skills by +1 (stacks with previous bonus).', 5),
 ('tune-up', 'Increases stats of Silencer and Shield. If neither are equipped, Reload Speed +1.', 1),
-('tune-up', 'Also increases stats of Long Barrel and Power Barrel. If neither are equipped, Reload Speed +1 and Steadiness +1.', 2);  
+('tune-up', 'Also increases stats of Long Barrel and Power Barrel. If neither are equipped, Reload Speed +1 and Steadiness +1.', 2),
+('steadiness', 'Reduces deviation by 2 and slightly extends range.', 3),
+('spiribird-s-call', 'Receive the effects of a random Spiribird at fixed intervals. (Certain quests only)', 1),
+('charge-master', 'When active, grants a slight increase to elemental damage and status buildup.', 1),
+('charge-master', 'When active, grants an increase to elemental damage and status buildup.', 2),
+('charge-master', 'When active, grants a large increase to elemental damage and status buildup.', 3),
+('grinder-s', 'Effect activates for 60 seconds when sharpness recovers 3 levels.', 1),
+('grinder-s', 'Effect activates for 60 seconds when sharpness recovers 2 levels.', 2),
+('grinder-s', 'Effect activates for 90 seconds when sharpness recovers 2 levels.', 3),
+('coalescence', 'While active, attack +12, element attack power +2, and status buildup +5%.', 1),
+('coalescence', 'While active, attack +15, element attack power +3, and status buildup +10%.', 2),
+('coalescence', 'While active, attack +18, element attack power +4, and status buildup +20%.', 3),
+('bladescale-hone', 'Activates 50% of the time.', 1),
+('bladescale-hone', 'Activates 75% of the time.', 2),
+('bladescale-hone', 'Activates 100% of the time.', 3),
+('wall-runner-boost', 'Wirebug Gauge recovers faster while wall running.', 1),
+('chain-crit', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for an extra stat boost.', 1);         
+INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
+('chain-crit', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a large stat boost.', 2),
+('chain-crit', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a huge stat boost.', 3),
+('redirection', 'Perform a perfectly-timed Switch Skill Swap just as a monster attacks to reduce the damage and negate damage reactions.', 1),
+('redirection', 'Nullifies incoming damage, and automatically performs a Swap Evade backwards which recovers Wirebug Gauge.', 2),
+('foray', 'While active, increases attack power +10.', 1),
+('foray', 'While active, increases attack power +10 and affinity +10%.', 2),
+('foray', 'While active, increases attack power +15 and affinity +20%.', 3),
+('bloodlust', 'While infected, attack & evasion increase & stamina use reduced.', 1),
+('bloodlust', 'While infected, further boost to effects received. Upon recovery, further increase to affinity.', 2),
+('bloodlust', 'While infected, further boost to effects received. Upon recovery, further increases duration of increased affinity.', 3),
+('blood-rite', 'A proportion of damage dealt is converted to health when striking a broken monster part.', 1),
+('blood-rite', 'Increase the amount of health you recover.', 2),
+('blood-rite', 'Further increases the amount of health you recover.', 3),
+('dereliction', 'Using Red Scroll: Increased elemental and status values. Using Blue Scroll: Increased attack and stun potency.', 1),
+('dereliction', 'Bolsters your attacks depending on which Swap Scroll is used.', 2),
+('dereliction', 'Further bolsters your attacks depending on which Swap Scroll is used.', 3),
+('furious', 'Using Red Scroll: Defense+ 10, all Res+ 5. Swap to Blue Scroll: Temporary Infinite Stamina.', 1),
+('furious', 'Using Red Scroll: Defense+ 20, all Res+ 10. Swap to Blue Scroll: Infinite Stamina Extended.', 2),
+('furious', 'Using Red Scroll: Defense+ 30, all Res+ 20. Swap to Blue Scroll: Infinite Stamina Extended.', 3),
+('mail-of-hellfire', 'Using Red Scroll: Defense down, attack up. Using Blue Scroll: Resistance down, element up.', 1),
+('mail-of-hellfire', 'Further decreases defense and resistance, while further increasing attack and element.', 2),
+('mail-of-hellfire', 'Greatly decreases defense and resistance, while greatly increasing attack and element.', 3);            
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
