@@ -908,11 +908,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('mosgharl-waist-x', 3, 100, 0, -3, 3, 0, 0, 0, 1, 'Mosgharl Folia X', 8, 'Mosgharl', '2', 0, 1, NULL),
 ('mosgharl-legs-x', 4, 100, 0, -3, 3, 0, 2, 0, 0, 'Mosgharl Roots X', 8, 'Mosgharl', '2', 0, 1, NULL);     
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
-('daeth-stench-head-x', 0, 110, 0, 3, -1, 0, 0, 1, 0, 'Death Stench Brain X', 8, 'Daeth Stench', '2', 1, 1, NULL),
-('daeth-stench-body-x', 1, 110, 0, 3, -1, 0, 1, 0, 0, 'Death Stench Muscle X', 8, 'Daeth Stench', '2', 1, 1, NULL),
-('daeth-stench-arms-x', 2, 110, 0, 3, -1, 0, 1, 0, 0, 'Death Stench Grip X', 8, 'Daeth Stench', '2', 1, 1, NULL),
-('daeth-stench-waist-x', 3, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Bowels X', 8, 'Daeth Stench', '2', 1, 1, NULL),
-('daeth-stench-legs-x', 4, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Heel X', 8, 'Daeth Stench', '2', 1, 1, NULL),
 ('makluva-head-x', 0, 104, 0, 1, 0, 0, 2, 0, 0, 'Makluva Hood X', 8, 'Makluva', '2', -2, 2, NULL),
 ('makluva-body-x', 1, 104, 0, 1, 0, 1, 1, 0, 0, 'Makluva Cover X', 8, 'Makluva', '2', -2, 2, NULL),
 ('makluva-arms-x', 2, 104, 0, 1, 0, 0, 2, 0, 0, 'Makluva Sleeves X', 8, 'Makluva', '2', -2, 2, NULL),
@@ -942,14 +937,14 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('brigade-body-x', 1, 106, 2, 1, 0, 0, 1, 1, 0, 'Brigade Suit X', 8, 'Brigade', '2', 2, 0, NULL),
 ('brigade-arms-x', 2, 106, 2, 1, 0, 0, 0, 2, 0, 'Brigade Vambraces X', 8, 'Brigade', '2', 2, 0, NULL),
 ('brigade-waist-x', 3, 106, 2, 1, 0, 1, 0, 1, 0, 'Brigade Coil X', 8, 'Brigade', '2', 2, 0, NULL),
-('brigade-legs-x', 4, 106, 2, 1, 0, 1, 2, 0, 0, 'Brigade Boots X', 8, 'Brigade', '2', 2, 0, NULL);      
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('brigade-legs-x', 4, 106, 2, 1, 0, 1, 2, 0, 0, 'Brigade Boots X', 8, 'Brigade', '2', 2, 0, NULL),
 ('barioth-head-x', 0, 108, 0, -5, 3, 2, 0, 0, 0, 'Barioth Helm X', 8, 'Barioth', '2', -1, 0, NULL),
 ('barioth-body-x', 1, 108, 0, -5, 3, 1, 2, 0, 0, 'Barioth Mail X', 8, 'Barioth', '2', -1, 0, NULL),
 ('barioth-arms-x', 2, 108, 0, -5, 3, 1, 1, 0, 0, 'Barioth Vambraces X', 8, 'Barioth', '2', -1, 0, NULL),
 ('barioth-waist-x', 3, 108, 0, -5, 3, 1, 0, 0, 0, 'Barioth Coil X', 8, 'Barioth', '2', -1, 0, NULL),
 ('barioth-legs-x', 4, 108, 0, -5, 3, 1, 0, 0, 1, 'Barioth Greaves X', 8, 'Barioth', '2', -1, 0, NULL),
-('magnamalo-head-x', 0, 108, 1, -2, 1, 0, 0, 1, 0, 'Nargacuga Helm X', 8, 'Magnamalo', '2', -3, 1, NULL),
+('magnamalo-head-x', 0, 108, 1, -2, 1, 0, 0, 1, 0, 'Nargacuga Helm X', 8, 'Magnamalo', '2', -3, 1, NULL);               
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('magnamalo-body-x', 1, 110, 1, 3, 1, 0, 1, 0, 0, 'Sinister Demon Garb', 8, 'Magnamalo', '2', -2, -3, NULL),
 ('magnamalo-arms-x', 2, 110, 1, 3, 1, 0, 1, 0, 0, 'Sinister Demon Gauntlets', 8, 'Magnamalo', '2', -2, -3, NULL),
 ('magnamalo-waist-x', 3, 110, 1, 3, 1, 0, 0, 0, 1, 'Sinister Demon Tassets', 8, 'Magnamalo', '2', -2, -3, NULL),
@@ -981,13 +976,13 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('rakna-kadaki-head-x', 0, 108, 0, 4, -3, 1, 0, 1, 0, 'Rakna Helm X', 8, 'Rakna-Kadaki', '2', -1, -2, NULL),
 ('rakna-kadaki-body-x', 1, 108, 0, 4, -3, 1, 0, 1, 0, 'Rakna Mail X', 8, 'Rakna-Kadaki', '2', -1, -2, NULL),
 ('rakna-kadaki-arms-x', 2, 108, 0, 4, -3, 0, 0, 0, 1, 'Rakna Armguards X', 8, 'Rakna-Kadaki', '2', -1, -2, NULL),
-('rakna-kadaki-waist-x', 3, 108, 0, 4, -3, 0, 2, 0, 0, 'Rakna Coil X', 8, 'Rakna-Kadaki', '2', -1, -2, NULL);               
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('rakna-kadaki-waist-x', 3, 108, 0, 4, -3, 0, 2, 0, 0, 'Rakna Coil X', 8, 'Rakna-Kadaki', '2', -1, -2, NULL),
 ('rakna-kadaki-legs-x', 4, 108, 0, 4, -3, 2, 0, 0, 0, 'Rakna Greaves X', 8, 'Rakna-Kadaki', '2', -1, -2, NULL),
 ('magma-almudron-head-x', 0, 112, 0, 5, -4, 0, 0, 1, 0, 'Magmadron Helm', 9, 'Magma Almudron', '2', 0, -5, NULL),
 ('magma-almudron-body-x', 1, 112, 0, 5, -4, 1, 0, 0, 1, 'Magmadron Mail', 9, 'Magma Almudron', '2', 0, -5, NULL),
 ('magma-almudron-arms-x', 2, 112, 0, 5, -4, 0, 0, 1, 0, 'Magmadron Vambraces', 9, 'Magma Almudron', '2', 0, -5, NULL),
-('magma-almudron-waist-x', 3, 112, 0, 5, -4, 0, 0, 2, 0, 'Magmadron Coil', 9, 'Magma Almudron', '2', 0, -5, NULL),
+('magma-almudron-waist-x', 3, 112, 0, 5, -4, 0, 0, 2, 0, 'Magmadron Coil', 9, 'Magma Almudron', '2', 0, -5, NULL);        
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('magma-almudron-legs-x', 4, 112, 0, 5, -4, 0, 0, 2, 0, 'Magmadron Greaves', 9, 'Magma Almudron', '2', 0, -5, NULL),
 ('pyre-rakna-kadaki-head-x', 0, 112, 2, 2, -2, 1, 0, 0, 1, 'Pyre-Kadaki Helm', 9, 'Pyre Rakna-Kadaki', '2', 2, -4, NULL),
 ('pyre-rakna-kadaki-body-x', 1, 112, 2, 2, -2, 1, 2, 0, 0, 'Pyre-Kadaki Mail', 9, 'Pyre Rakna-Kadaki', '2', 2, -4, NULL),
@@ -1015,14 +1010,14 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('remobra-legs-x', 4, 112, 3, 1, 1, 1, 0, 0, 1, 'Remobra Feet X', 9, 'Remobra', '2', 1, 1, NULL),
 ('mizutsune-head-x', 0, 114, -1, 0, 1, 1, 1, 0, 0, 'Mizutsune Helm X', 9, 'Mizutsune', '2', -3, 2, NULL),
 ('mizutsune-body-x', 1, 114, -1, 0, 1, 0, 1, 0, 0, 'Mizutsune Mail X', 9, 'Mizutsune', '2', -3, 2, NULL),
-('mizutsune-arms-x', 2, 114, -1, 0, 1, 2, 0, 0, 1, 'Mizutsune Braces X', 9, 'Mizutsune', '2', -3, 2, NULL);
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('mizutsune-arms-x', 2, 114, -1, 0, 1, 2, 0, 0, 1, 'Mizutsune Braces X', 9, 'Mizutsune', '2', -3, 2, NULL),
 ('mizutsune-waist-x', 3, 114, -1, 0, 1, 1, 0, 0, 1, 'Mizutsune Coil X', 9, 'Mizutsune', '2', -3, 2, NULL),
 ('mizutsune-legs-x', 4, 114, -1, 0, 1, 2, 0, 1, 0, 'Mizutsune Greaves X', 9, 'Mizutsune', '2', -3, 2, NULL),
 ('rathalos-head-x', 0, 114, -3, 3, 1, 0, 0, 0, 1, 'Rathalos Helm X', 9, 'Rathalos', '2', -2, 1, NULL),
 ('rathalos-body-x', 1, 114, -3, 3, 1, 0, 0, 1, 0, 'Rathalos Mail X', 9, 'Rathalos', '2', -2, 1, NULL),
 ('rathalos-arms-x', 2, 114, -3, 3, 1, 0, 1, 0, 0, 'Rathalos Braces X', 9, 'Rathalos', '2', -2, 1, NULL),
-('rathalos-waist-x', 3, 114, -3, 3, 1, 0, 1, 0, 0, 'Rathalos Coil X', 9, 'Rathalos', '2', -2, 1, NULL),
+('rathalos-waist-x', 3, 114, -3, 3, 1, 0, 1, 0, 0, 'Rathalos Coil X', 9, 'Rathalos', '2', -2, 1, NULL);       
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('rathalos-legs-x', 4, 114, -3, 3, 1, 2, 0, 0, 0, 'Rathalos Greaves X', 9, 'Rathalos', '2', -2, 1, NULL),
 ('zinogre-head-x', 0, 116, 1, 0, -4, 0, 0, 1, 0, 'Zinogre Helm X', 9, 'Zinogre', '2', 4, -1, NULL),
 ('zinogre-body-x', 1, 116, 1, 0, -4, 3, 0, 0, 0, 'Zinogre Mail X', 9, 'Zinogre', '2', 4, -1, NULL),
@@ -1056,14 +1051,14 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('astalos-legs-x', 4, 114, 0, 0, -3, 2, 0, 0, 0, 'Astalos Greaves', 9, 'Astalos', '2', 4, -1, NULL),
 ('lunagaron-head-x', 0, 114, -1, -4, 4, 0, 2, 0, 0, 'Lunagaron Helm', 9, 'Lunagaron', '2', -1, 2, NULL),
 ('lunagaron-body-x', 1, 114, -1, -4, 4, 0, 0, 0, 1, 'Lunagaron Mail', 9, 'Lunagaron', '2', -1, 2, NULL),
-('lunagaron-arms-x', 2, 114, -1, -4, 4, 1, 1, 0, 0, 'Lunagaron Braces', 9, 'Lunagaron', '2', -1, 2, NULL);      
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('lunagaron-arms-x', 2, 114, -1, -4, 4, 1, 1, 0, 0, 'Lunagaron Braces', 9, 'Lunagaron', '2', -1, 2, NULL),
 ('lunagaron-waist-x', 3, 114, -1, -4, 4, 0, 0, 0, 1, 'Lunagaron Coil', 9, 'Lunagaron', '2', -1, 2, NULL),
 ('lunagaron-legs-x', 4, 114, -1, -4, 4, 2, 1, 0, 0, 'Lunagaron Greaves', 9, 'Lunagaron', '2', -1, 2, NULL),
 ('espinas-head-x', 0, 116, -2, 3, -3, 0, 2, 0, 0, 'Espinas Brain', 9, 'Espinas', '2', 2, -1, NULL),
 ('espinas-body-x', 1, 116, -2, 3, -3, 0, 0, 0, 1, 'Espinas Muscle', 9, 'Espinas', '2', 2, -1, NULL),
 ('espinas-arms-x', 2, 116, -2, 3, -3, 0, 0, 0, 1, 'Espinas Vambraces', 9, 'Espinas', '2', 2, -1, NULL),
-('espinas-waist-x', 3, 116, -2, 3, -3, 1, 0, 1, 0, 'Espinas Bowels', 9, 'Espinas', '2', 2, -1, NULL),
+('espinas-waist-x', 3, 116, -2, 3, -3, 1, 0, 1, 0, 'Espinas Bowels', 9, 'Espinas', '2', 2, -1, NULL);
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('espinas-legs-x', 4, 116, -2, 3, -3, 1, 0, 0, 1, 'Espinas Heel', 9, 'Espinas', '2', 2, -1, NULL),
 ('hoplite-head-x', 0, 114, 1, 1, 1, 0, 1, 0, 0, 'Hoplite''s Helm', 9, 'Hoplite', '2', 1, 1, NULL),
 ('hoplite-body-x', 1, 114, 1, 1, 1, 2, 0, 0, 0, 'Hoplite''s Armor', 9, 'Hoplite', '2', 1, 1, NULL),
@@ -1096,14 +1091,14 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('rajang-waist-x', 3, 116, 2, 2, -5, 0, 0, 0, 1, 'Grand God''s Peer Belt', 9, 'Rajang', '2', 3, 1, NULL),
 ('rajang-legs-x', 4, 116, 2, 2, -5, 3, 0, 0, 0, 'Grand God''s Peer Feet', 9, 'Rajang', '2', 3, 1, NULL),
 ('bazelgeuse-head-x', 0, 118, -2, 3, -2, 0, 0, 1, 0, 'Bazelgeuse Helm X', 9, 'Bazelgeuse', '2', -4, 1, NULL),
-('bazelgeuse-body-x', 1, 118, -2, 3, -2, 2, 0, 0, 0, 'Bazelgeuse Mail X', 9, 'Bazelgeuse', '2', -4, 1, NULL);            
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('bazelgeuse-body-x', 1, 118, -2, 3, -2, 2, 0, 0, 0, 'Bazelgeuse Mail X', 9, 'Bazelgeuse', '2', -4, 1, NULL),
 ('bazelgeuse-arms-x', 2, 118, -2, 3, -2, 0, 2, 0, 0, 'Bazelgeuse Braces X', 9, 'Bazelgeuse', '2', -4, 1, NULL),
 ('bazelgeuse-waist-x', 3, 118, -2, 3, -2, 0, 2, 0, 0, 'Bazelgeuse Coil X', 9, 'Bazelgeuse', '2', -4, 1, NULL),
 ('bazelgeuse-legs-x', 4, 118, -2, 3, -2, 0, 0, 1, 0, 'Bazelgeuse Greaves X', 9, 'Bazelgeuse', '2', -4, 1, NULL),
 ('damascus-head-x', 0, 114, -1, -1, 1, 1, 0, 0, 0, 'Damascus Helm X', 9, 'Damascus', '2', -3, 2, NULL),
 ('damascus-body-x', 1, 114, -1, -1, 1, 1, 1, 0, 0, 'Damascus Mail X', 9, 'Damascus', '2', -3, 2, NULL),
-('damascus-arms-x', 2, 114, -1, -1, 1, 1, 1, 0, 0, 'Damascus Vambraces X', 9, 'Damascus', '2', -3, 2, NULL),
+('damascus-arms-x', 2, 114, -1, -1, 1, 1, 1, 0, 0, 'Damascus Vambraces X', 9, 'Damascus', '2', -3, 2, NULL);            
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('damascus-waist-x', 3, 114, -1, -1, 1, 0, 1, 0, 0, 'Damascus Coil X', 9, 'Damascus', '2', -3, 2, NULL),
 ('damascus-legs-x', 4, 114, -1, -1, 1, 0, 0, 1, 0, 'Damascus Greaves X', 9, 'Damascus', '2', -3, 2, NULL),
 ('kushala-head-x', 0, 120, -3, -1, 3, 0, 0, 0, 1, 'Kushala Glare X', 9, 'Kushala', '2', -2, 2, NULL),
@@ -1134,13 +1129,13 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('charite-professor-head-x', 0, 114, 1, 1, 1, 3, 0, 0, 0, STRINGDECODE('Charit\u00e9 Barrette/Professor''s Goggles'), 9, STRINGDECODE('Charit\u00e9/Professor'), '2', 1, 1, NULL),
 ('charite-professor-body-x', 1, 114, 1, 1, 1, 2, 0, 0, 0, STRINGDECODE('Charit\u00e9 Jacket/Professor''s Jacket'), 9, STRINGDECODE('Charit\u00e9/Professor'), '2', 1, 1, NULL),
 ('charite-professor-arms-x', 2, 114, 1, 1, 1, 1, 2, 0, 0, STRINGDECODE('Charit\u00e9 Gloves/Professor''s Mittens'), 9, STRINGDECODE('Charit\u00e9/Professor'), '2', 1, 1, NULL),
-('charite-professor-waist-x', 3, 114, 1, 1, 1, 1, 2, 0, 0, STRINGDECODE('Charit\u00e9 Skirt/Professor''s Bottoms'), 9, STRINGDECODE('Charit\u00e9/Professor'), '2', 1, 1, NULL);  
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('charite-professor-waist-x', 3, 114, 1, 1, 1, 1, 2, 0, 0, STRINGDECODE('Charit\u00e9 Skirt/Professor''s Bottoms'), 9, STRINGDECODE('Charit\u00e9/Professor'), '2', 1, 1, NULL),
 ('charite-professor-legs-x', 4, 114, 1, 1, 1, 1, 0, 0, 1, STRINGDECODE('Charit\u00e9 Boots/Professor''s Boots'), 9, STRINGDECODE('Charit\u00e9/Professor'), '2', 1, 1, NULL),
 ('scholar-head-x', 0, 114, 0, 0, 0, 0, 0, 0, 1, 'Scholarly Hood', 9, 'Scholar', '2', 0, 0, NULL),
 ('scholar-body-x', 1, 114, 0, 0, 0, 1, 2, 0, 0, 'Scholarly Suit', 9, 'Scholar', '2', 0, 0, NULL),
 ('scholar-arms-x', 2, 114, 0, 0, 0, 1, 2, 0, 0, 'Scholarly Strongarm', 9, 'Scholar', '2', 0, 0, NULL),
-('scholar-waist-x', 3, 114, 0, 0, 0, 2, 0, 1, 0, 'Scholarly Sash', 9, 'Scholar', '2', 0, 0, NULL),
+('scholar-waist-x', 3, 114, 0, 0, 0, 2, 0, 1, 0, 'Scholarly Sash', 9, 'Scholar', '2', 0, 0, NULL);   
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('scholar-legs-x', 4, 114, 0, 0, 0, 0, 1, 0, 0, 'Scholarly Boots', 9, 'Scholar', '2', 0, 0, NULL),
 ('commission-head-x', 0, 114, 2, 2, 2, 0, 0, 0, 1, 'Commission Gorget', 9, 'Commission', '2', 2, 2, NULL),
 ('commission-body-x', 1, 114, 2, 2, 2, 0, 2, 0, 0, 'Commission Vest', 9, 'Commission', '2', 2, 2, NULL),
@@ -1172,12 +1167,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('thunder-serpent-narwa-arms-x', 2, 122, -4, 2, -3, 0, 1, 0, 0, 'Narwa''s Pure Pauldrons', 10, 'Thunder Serpent Narwa', '2', 4, 1, NULL),
 ('thunder-serpent-narwa-waist-x', 3, 122, -4, 2, -3, 0, 1, 0, 0, 'Narwa''s Pure Fauld', 10, 'Thunder Serpent Narwa', '2', 4, 1, NULL),
 ('thunder-serpent-narwa-legs-x', 4, 122, -4, 2, -3, 0, 1, 0, 0, 'Narwa''s Pure Foot', 10, 'Thunder Serpent Narwa', '2', 4, 1, NULL),
-('valstrax-head-x', 0, 124, 3, -2, -2, 2, 0, 0, 1, 'Valstrax Helm - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL);              
-INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('valstrax-head-x', 0, 124, 3, -2, -2, 2, 0, 0, 1, 'Valstrax Helm - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL),
 ('valstrax-body-x', 1, 124, 3, -2, -2, 1, 0, 0, 1, 'Valstrax Mail - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL),
 ('valstrax-arms-x', 2, 124, 3, -2, -2, 0, 0, 0, 1, 'Valstrax Braces - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL),
 ('valstrax-waist-x', 3, 124, 3, -2, -2, 1, 1, 0, 0, 'Valstrax Coil - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL),
-('valstrax-legs-x', 4, 124, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Greaves - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL),
+('valstrax-legs-x', 4, 124, 3, -2, -2, 1, 0, 1, 0, 'Valstrax Greaves - Eclipse', 10, 'Valstrax', '2', -2, -2, NULL);            
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('furious-rajang-head-x', 0, 122, 2, 2, -5, 3, 0, 0, 0, 'Divine Ire Mask', 10, 'Furious Rajang', '2', 3, 1, NULL),
 ('furious-rajang-body-x', 1, 122, 2, 2, -5, 0, 0, 1, 0, 'Divine Ire Haori', 10, 'Furious Rajang', '2', 3, 1, NULL),
 ('furious-rajang-arms-x', 2, 122, 2, 2, -5, 0, 0, 0, 1, 'Divine Ire Kote', 10, 'Furious Rajang', '2', 3, 1, NULL),
@@ -1199,7 +1194,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('guild-palace-waist-x', 3, 120, 1, 1, 1, 1, 0, 1, 0, 'Guild Palace Coil', 9, 'Guild Palace', '2', 2, 2, NULL),
 ('guild-palace-legs-x', 4, 120, 1, 1, 1, 0, 0, 1, 0, 'Guild Palace Greaves', 9, 'Guild Palace', '2', 2, 2, NULL),
 ('soaring-head-x', 0, 116, 0, 0, 0, 0, 0, 0, 1, 'Soaring Feather', 10, 'Soaring', '2', 0, 0, NULL),
-('blessed-head-x', 0, 116, 0, 0, 0, 0, 1, 0, 0, 'Blessed Feather', 10, 'Blessed', '2', 0, 0, NULL);         
+('blessed-head-x', 0, 116, 0, 0, 0, 0, 1, 0, 0, 'Blessed Feather', 10, 'Blessed', '2', 0, 0, NULL),
+('death-stench-head-x', 0, 110, 0, 3, -1, 0, 0, 1, 0, 'Death Stench Brain X', 8, 'Death Stench', '2', 1, 1, NULL),
+('death-stench-body-x', 1, 110, 0, 3, -1, 0, 1, 0, 0, 'Death Stench Muscle X', 8, 'Death Stench', '2', 1, 1, NULL),
+('death-stench-arms-x', 2, 110, 0, 3, -1, 0, 1, 0, 0, 'Death Stench Grip X', 8, 'Death Stench', '2', 1, 1, NULL),
+('death-stench-waist-x', 3, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Bowels X', 8, 'Death Stench', '2', 1, 1, NULL),
+('death-stench-legs-x', 4, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Heel X', 8, 'Death Stench', '2', 1, 1, NULL);       
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -2794,20 +2794,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'mosgharl-waist-x', 'fire-attack'),
 (1, 'mosgharl-legs-x', 'tune-up'),
 (2, 'mosgharl-legs-x', 'steadiness'),
-(1, 'daeth-stench-head-x', 'attack-boost'),
-(1, 'daeth-stench-head-x', 'protective-polish'),
-(2, 'daeth-stench-head-x', 'speed-sharpening'),
-(1, 'daeth-stench-body-x', 'fortify'),
-(1, 'daeth-stench-body-x', 'speed-sharpening'),
-(2, 'daeth-stench-body-x', 'rapid-morph'),
-(1, 'daeth-stench-arms-x', 'attack-boost'),
-(2, 'daeth-stench-arms-x', 'maximum-might'),
-(1, 'daeth-stench-waist-x', 'attack-boost'),
-(1, 'daeth-stench-waist-x', 'maximum-might'),
-(1, 'daeth-stench-waist-x', 'protective-polish'),
-(1, 'daeth-stench-legs-x', 'attack-boost'),
-(1, 'daeth-stench-legs-x', 'protective-polish'),
-(1, 'daeth-stench-legs-x', 'rapid-morph'),
 (1, 'makluva-head-x', 'speed-eating'),
 (1, 'makluva-head-x', 'stamina-surge'),
 (2, 'makluva-head-x', 'sleep-resistance'),
@@ -2878,8 +2864,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'guardian-legs-x', 'guard'),
 (2, 'brigade-head-x', 'botanist'),
 (2, 'brigade-head-x', 'divine-blessing'),
-(1, 'brigade-body-x', 'capture-master');              
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'brigade-body-x', 'capture-master'),
 (1, 'brigade-body-x', 'geologist'),
 (1, 'brigade-body-x', 'marathon-runner'),
 (1, 'brigade-arms-x', 'divine-blessing'),
@@ -2895,7 +2880,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'barioth-body-x', 'quick-sheath'),
 (2, 'barioth-body-x', 'maximum-might'),
 (1, 'barioth-arms-x', 'maximum-might'),
-(1, 'barioth-arms-x', 'quick-sheath'),
+(1, 'barioth-arms-x', 'quick-sheath');           
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'barioth-arms-x', 'critical-eye'),
 (1, 'barioth-waist-x', 'critical-draw'),
 (1, 'barioth-waist-x', 'partbreaker'),
@@ -2915,8 +2901,6 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'magnamalo-legs-x', 'flinch-free'),
 (1, 'magnamalo-legs-x', 'hellfire-cloak'),
 (2, 'magnamalo-legs-x', 'resentment'),
-(1, 'magnamalo-head-x', 'evade-window'),
-(2, 'magnamalo-head-x', 'constitution'),
 (1, 'nargacuga-body-x', 'evade-window'),
 (1, 'nargacuga-body-x', 'flinch-free'),
 (2, 'nargacuga-body-x', 'critical-eye'),
@@ -2977,8 +2961,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'almudron-body-x', 'power-prolonger'),
 (2, 'almudron-body-x', 'razor-sharp'),
 (1, 'almudron-arms-x', 'rapid-morph'),
-(2, 'almudron-arms-x', 'evade-window');        
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'almudron-arms-x', 'evade-window'),
 (1, 'almudron-waist-x', 'power-prolonger'),
 (1, 'almudron-waist-x', 'spare-shot'),
 (2, 'almudron-waist-x', 'evade-window'),
@@ -2995,7 +2978,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'rakna-kadaki-arms-x', 'constitution'),
 (1, 'rakna-kadaki-waist-x', 'spare-shot'),
 (1, 'rakna-kadaki-waist-x', 'spread-up'),
-(1, 'rakna-kadaki-waist-x', 'tune-up'),
+(1, 'rakna-kadaki-waist-x', 'tune-up');        
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'rakna-kadaki-legs-x', 'stamina-surge'),
 (3, 'rakna-kadaki-legs-x', 'constitution'),
 (1, 'magma-almudron-head-x', 'resentment'),
@@ -3068,8 +3052,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'remobra-body-x', 'poison-attack'),
 (1, 'remobra-arms-x', 'critical-element'),
 (2, 'remobra-arms-x', 'windproof'),
-(1, 'remobra-waist-x', 'poison-resistance');      
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'remobra-waist-x', 'poison-resistance'),
 (2, 'remobra-waist-x', 'critical-element'),
 (1, 'remobra-legs-x', 'weakness-exploit'),
 (2, 'remobra-legs-x', 'poison-resistance'),
@@ -3086,7 +3069,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'mizutsune-waist-x', 'free-meal'),
 (1, 'mizutsune-legs-x', 'bubbly-dance'),
 (1, 'mizutsune-legs-x', 'constitution'),
-(1, 'mizutsune-legs-x', 'evade-window'),
+(1, 'mizutsune-legs-x', 'evade-window');             
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'rathalos-head-x', 'attack-boost'),
 (1, 'rathalos-head-x', 'critical-boost'),
 (1, 'rathalos-head-x', 'partbreaker'),
@@ -3170,8 +3154,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'astalos-waist-x', 'power-prolonger'),
 (3, 'astalos-legs-x', 'razor-sharp'),
 (3, 'astalos-legs-x', 'spare-shot'),
-(3, 'astalos-legs-x', 'thunder-attack');      
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(3, 'astalos-legs-x', 'thunder-attack'),
 (1, 'lunagaron-head-x', 'wirebug-whisperer'),
 (2, 'lunagaron-head-x', 'critical-eye'),
 (1, 'lunagaron-body-x', 'redirection'),
@@ -3189,7 +3172,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'espinas-arms-x', 'foray'),
 (1, 'espinas-arms-x', 'rapid-fire-up'),
 (2, 'espinas-arms-x', 'protective-polish'),
-(1, 'espinas-waist-x', 'protective-polish'),
+(1, 'espinas-waist-x', 'protective-polish');        
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'espinas-waist-x', 'agitator'),
 (1, 'espinas-legs-x', 'foray'),
 (2, 'espinas-legs-x', 'flinch-free'),
@@ -3272,8 +3256,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'rajang-head-x', 'heroics'),
 (1, 'rajang-body-x', 'heroics'),
 (1, 'rajang-body-x', 'maximum-might'),
-(2, 'rajang-body-x', 'latent-power');           
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(2, 'rajang-body-x', 'latent-power'),
 (1, 'rajang-arms-x', 'heroics'),
 (2, 'rajang-arms-x', 'latent-power'),
 (1, 'rajang-waist-x', 'critical-boost'),
@@ -3292,7 +3275,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'bazelgeuse-arms-x', 'guard-up'),
 (2, 'bazelgeuse-arms-x', 'agitator'),
 (1, 'bazelgeuse-waist-x', 'guard'),
-(1, 'bazelgeuse-waist-x', 'razor-sharp'),
+(1, 'bazelgeuse-waist-x', 'razor-sharp');  
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'bazelgeuse-waist-x', 'load-shells'),
 (1, 'bazelgeuse-legs-x', 'agitator'),
 (1, 'bazelgeuse-legs-x', 'guard'),
@@ -3373,8 +3357,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'malzeno-arms-x', 'wirebug-whisperer'),
 (2, 'malzeno-arms-x', 'attack-boost'),
 (1, 'malzeno-waist-x', 'attack-boost'),
-(1, 'malzeno-waist-x', 'partbreaker');   
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'malzeno-waist-x', 'partbreaker'),
 (2, 'malzeno-waist-x', 'blood-rite'),
 (1, 'malzeno-legs-x', 'attack-boost'),
 (1, 'malzeno-legs-x', 'weakness-exploit'),
@@ -3389,7 +3372,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'charite-professor-waist-x', 'tremor-resistance'),
 (1, 'charite-professor-legs-x', 'hunger-resistance'),
 (3, 'charite-professor-legs-x', 'marathon-runner'),
-(1, 'scholar-head-x', 'capture-master'),
+(1, 'scholar-head-x', 'capture-master');         
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'scholar-head-x', 'wide-range'),
 (1, 'scholar-body-x', 'free-meal'),
 (3, 'scholar-body-x', 'blight-resistance'),
@@ -3467,8 +3451,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'thunder-serpent-narwa-head-x', 'offensive-guard'),
 (1, 'thunder-serpent-narwa-head-x', 'rapid-morph'),
 (1, 'thunder-serpent-narwa-head-x', 'storm-soul'),
-(1, 'thunder-serpent-narwa-head-x', 'thunder-alignment');  
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'thunder-serpent-narwa-head-x', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-body-x', 'constitution'),
 (1, 'thunder-serpent-narwa-body-x', 'critical-draw'),
 (1, 'thunder-serpent-narwa-body-x', 'storm-soul'),
@@ -3482,7 +3465,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'thunder-serpent-narwa-waist-x', 'storm-soul'),
 (1, 'thunder-serpent-narwa-waist-x', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-legs-x', 'evade-window'),
-(1, 'thunder-serpent-narwa-legs-x', 'marathon-runner'),
+(1, 'thunder-serpent-narwa-legs-x', 'marathon-runner');         
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'thunder-serpent-narwa-legs-x', 'storm-soul'),
 (1, 'thunder-serpent-narwa-legs-x', 'thunder-alignment'),
 (1, 'valstrax-head-x', 'dragonheart'),
@@ -3533,7 +3517,23 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'outpost-waist-x', 'quick-sheath'),
 (3, 'outpost-waist-x', 'punishing-draw'),
 (1, 'outpost-legs-x', 'quick-sheath'),
-(2, 'outpost-legs-x', 'critical-draw');    
+(2, 'outpost-legs-x', 'critical-draw'),
+(1, 'death-stench-head-x', 'attack-boost'),
+(1, 'death-stench-head-x', 'protective-polish'),
+(2, 'death-stench-head-x', 'speed-sharpening'),
+(1, 'death-stench-body-x', 'fortify'),
+(1, 'death-stench-body-x', 'speed-sharpening'),
+(2, 'death-stench-body-x', 'rapid-morph'),
+(1, 'death-stench-arms-x', 'attack-boost'),
+(2, 'death-stench-arms-x', 'maximum-might'),
+(1, 'death-stench-waist-x', 'attack-boost'),
+(1, 'death-stench-waist-x', 'maximum-might'),
+(1, 'death-stench-waist-x', 'protective-polish'),
+(1, 'death-stench-legs-x', 'attack-boost'),
+(1, 'death-stench-legs-x', 'protective-polish'),
+(1, 'death-stench-legs-x', 'rapid-morph'),
+(1, 'magnamalo-head-x', 'evade-window'),
+(2, 'magnamalo-head-x', 'constitution');          
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
