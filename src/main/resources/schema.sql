@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 1145 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
+-- 1165 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -1199,7 +1199,28 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('death-stench-body-x', 1, 110, 0, 3, -1, 0, 1, 0, 0, 'Death Stench Muscle X', 8, 'Death Stench', '2', 1, 1, NULL),
 ('death-stench-arms-x', 2, 110, 0, 3, -1, 0, 1, 0, 0, 'Death Stench Grip X', 8, 'Death Stench', '2', 1, 1, NULL),
 ('death-stench-waist-x', 3, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Bowels X', 8, 'Death Stench', '2', 1, 1, NULL),
-('death-stench-legs-x', 4, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Heel X', 8, 'Death Stench', '2', 1, 1, NULL);       
+('death-stench-legs-x', 4, 110, 0, 3, -1, 1, 1, 0, 0, 'Death Stench Heel X', 8, 'Death Stench', '2', 1, 1, NULL),
+('seething-bazelgeuse-head-x', 0, 123, -1, 3, -3, 0, 1, 1, 0, 'Pride Helm', 10, 'Seething Bazelgeuse', '2', -2, 0, NULL),
+('seething-bazelgeuse-body-x', 1, 123, -1, 3, -3, 0, 0, 1, 0, 'Pride Mail', 10, 'Seething Bazelgeuse', '2', -2, 0, NULL),
+('seething-bazelgeuse-arms-x', 2, 123, -1, 3, -3, 1, 0, 1, 0, 'Pride Vambraces', 10, 'Seething Bazelgeuse', '2', -2, 0, NULL),
+('seething-bazelgeuse-waist-x', 3, 123, -1, 3, -3, 2, 1, 0, 0, 'Pride Coil', 10, 'Seething Bazelgeuse', '2', -2, 0, NULL),
+('seething-bazelgeuse-legs-x', 4, 123, -1, 3, -3, 0, 2, 0, 0, 'Pride Greaves', 10, 'Seething Bazelgeuse', '2', -2, 0, NULL),
+('gold-rathian-head-x', 0, 120, 2, 3, -1, 0, 2, 0, 0, 'Golden Lunehelm', 10, 'Gold Rathian', '2', -4, -3, NULL),
+('gold-rathian-body-x', 1, 120, 2, 3, -1, 0, 1, 1, 0, 'Golden Lunemail', 10, 'Gold Rathian', '2', -4, -3, NULL),
+('gold-rathian-arms-x', 2, 120, 2, 3, -1, 1, 1, 0, 1, 'Golden Lunebraces', 10, 'Gold Rathian', '2', -4, -3, NULL),
+('gold-rathian-waist-x', 3, 120, 2, 3, -1, 0, 1, 1, 0, 'Golden Lunecoil', 10, 'Gold Rathian', '2', -4, -3, NULL);     
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('gold-rathian-legs-x', 4, 120, 2, 3, -1, 0, 1, 0, 1, 'Golden Lunegreaves', 10, 'Gold Rathian', '2', -4, -3, NULL),
+('silver-rathalos-head-x', 0, 122, 3, 4, -2, 2, 0, 0, 1, 'Silver Solhelm', 10, 'Silver Rathalos', '2', -3, -4, NULL),
+('silver-rathalos-body-x', 1, 122, 3, 4, -2, 1, 0, 1, 1, 'Silver Solmail', 10, 'Silver Rathalos', '2', -3, -4, NULL),
+('silver-rathalos-arms-x', 2, 122, 3, 4, -2, 2, 0, 0, 1, 'Silver Solbraces', 10, 'Silver Rathalos', '2', -3, -4, NULL),
+('silver-rathalos-waist-x', 3, 122, 3, 4, -2, 2, 1, 0, 0, 'Silver Solcoil', 10, 'Silver Rathalos', '2', -3, -4, NULL),
+('silver-rathalos-legs-x', 4, 122, 3, 4, -2, 1, 2, 0, 0, 'Silver Solgreaves', 10, 'Silver Rathalos', '2', -3, -4, NULL),
+('lucent-nargacuga-head-x', 0, 118, -2, 3, -5, 2, 0, 1, 0, 'Lambent Casque', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
+('lucent-nargacuga-body-x', 1, 118, -2, 3, -5, 1, 0, 1, 0, 'Lambent Hauberk', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
+('lucent-nargacuga-arms-x', 2, 118, -2, 3, -5, 0, 2, 0, 0, 'Lambent Wristrays', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
+('lucent-nargacuga-waist-x', 3, 118, -2, 3, -5, 2, 0, 1, 0, 'Lambent Sash', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
+('lucent-nargacuga-legs-x', 4, 118, -2, 3, -5, 0, 0, 1, 0, 'Lambent Gaiters', 10, 'Lucent Nargacuga', '2', 0, 3, NULL);       
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -1207,7 +1228,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 2302 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
+-- 2362 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -3533,7 +3554,68 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'death-stench-legs-x', 'protective-polish'),
 (1, 'death-stench-legs-x', 'rapid-morph'),
 (1, 'magnamalo-head-x', 'evade-window'),
-(2, 'magnamalo-head-x', 'constitution');          
+(2, 'magnamalo-head-x', 'constitution'),
+(1, 'seething-bazelgeuse-head-x', 'attack-boost'),
+(1, 'seething-bazelgeuse-head-x', 'earplugs'),
+(2, 'seething-bazelgeuse-head-x', 'latent-power'),
+(1, 'seething-bazelgeuse-body-x', 'attack-boost'),
+(1, 'seething-bazelgeuse-body-x', 'guts'),
+(2, 'seething-bazelgeuse-body-x', 'speed-eating'),
+(1, 'seething-bazelgeuse-arms-x', 'earplugs'),
+(1, 'seething-bazelgeuse-arms-x', 'guts'),
+(1, 'seething-bazelgeuse-arms-x', 'weakness-exploit'),
+(1, 'seething-bazelgeuse-waist-x', 'earplugs'),
+(1, 'seething-bazelgeuse-waist-x', 'stamina-surge'),
+(3, 'seething-bazelgeuse-waist-x', 'latent-power'),
+(1, 'seething-bazelgeuse-legs-x', 'guts'),
+(2, 'seething-bazelgeuse-legs-x', 'stamina-surge'),
+(3, 'seething-bazelgeuse-legs-x', 'stamina-thief'),
+(1, 'gold-rathian-head-x', 'foray'),
+(2, 'gold-rathian-head-x', 'chain-crit'),
+(2, 'gold-rathian-head-x', 'status-trigger'),
+(2, 'gold-rathian-body-x', 'counterstrike'),
+(2, 'gold-rathian-body-x', 'defiance'),
+(3, 'gold-rathian-body-x', 'divine-blessing'),
+(1, 'gold-rathian-arms-x', 'chain-crit'),
+(1, 'gold-rathian-arms-x', 'critical-boost');              
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'gold-rathian-arms-x', 'peak-performance'),
+(1, 'gold-rathian-waist-x', 'foray'),
+(1, 'gold-rathian-waist-x', 'status-trigger'),
+(2, 'gold-rathian-waist-x', 'evade-window'),
+(2, 'gold-rathian-legs-x', 'peak-performance'),
+(2, 'gold-rathian-legs-x', 'recovery-up'),
+(3, 'gold-rathian-legs-x', 'defiance'),
+(1, 'silver-rathalos-head-x', 'critical-element'),
+(2, 'silver-rathalos-head-x', 'critical-boost'),
+(3, 'silver-rathalos-head-x', 'windproof'),
+(1, 'silver-rathalos-body-x', 'critical-element'),
+(1, 'silver-rathalos-body-x', 'element-exploit'),
+(3, 'silver-rathalos-body-x', 'fire-attack'),
+(1, 'silver-rathalos-arms-x', 'critical-element'),
+(1, 'silver-rathalos-arms-x', 'element-exploit'),
+(2, 'silver-rathalos-arms-x', 'constitution'),
+(1, 'silver-rathalos-waist-x', 'element-exploit'),
+(1, 'silver-rathalos-waist-x', 'redirection'),
+(3, 'silver-rathalos-waist-x', 'constitution'),
+(1, 'silver-rathalos-legs-x', 'critical-boost'),
+(1, 'silver-rathalos-legs-x', 'redirection'),
+(2, 'silver-rathalos-legs-x', 'maximum-might'),
+(1, 'lucent-nargacuga-head-x', 'ammo-up'),
+(1, 'lucent-nargacuga-head-x', 'handicraft'),
+(3, 'lucent-nargacuga-head-x', 'agitator'),
+(1, 'lucent-nargacuga-body-x', 'critical-boost'),
+(1, 'lucent-nargacuga-body-x', 'sneak-attack'),
+(2, 'lucent-nargacuga-body-x', 'agitator'),
+(2, 'lucent-nargacuga-arms-x', 'adrenaline-rush'),
+(3, 'lucent-nargacuga-arms-x', 'evade-window'),
+(1, 'lucent-nargacuga-waist-x', 'sneak-attack'),
+(2, 'lucent-nargacuga-waist-x', 'handicraft'),
+(2, 'lucent-nargacuga-waist-x', 'spread-up'),
+(1, 'lucent-nargacuga-legs-x', 'adrenaline-rush'),
+(1, 'lucent-nargacuga-legs-x', 'sneak-attack'),
+(2, 'lucent-nargacuga-legs-x', 'ammo-up'),
+(2, 'lucent-nargacuga-legs-x', 'handicraft');   
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -3582,7 +3664,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 126 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 132 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -3712,14 +3794,20 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('blood-rite', 'A proportion of damage dealt is converted to health when striking a broken monster part.', 3, 3, 'Blood Rite'),
 ('dereliction', 'Qurio will drain health, but also bolster your attacks. Multiple Qurio further bolster attacks and let you recover health when performing a Switch Skill Swap.', 3, 3, 'Dereliction'),
 ('furious', 'Using the Red Scroll builds your fury while fighting monsters. Swapping to the Blue Scroll when your fury is full gives you infinite stamina temporarily.', 3, 3, 'Furious'),
-('mail-of-hellfire', 'Decreases defense but increases attack. Exact changes to stats depends on Switch Skill Swap Scroll that is being used.', 3, 3, 'Mail of Hellfire');   
+('mail-of-hellfire', 'Decreases defense but increases attack. Exact changes to stats depends on Switch Skill Swap Scroll that is being used.', 3, 3, 'Mail of Hellfire'),
+('guts', 'Prevents fainting one time only when damage taken exceeds a certain amount of your remaining health.', 3, 3, 'Guts'),
+('status-trigger', 'Perform a perfectly-timed evade just as a monster attacks to trigger abnormal status buildup on hit.', 3, 3, 'Status Trigger'),
+('defiance', 'Increases defense when large monsters become enraged.', 5, 5, 'Defiance'),
+('element-exploit', 'Increases elemental damage when attacking body parts upon which the element are highly effective.', 3, 3, 'Element Exploit'),
+('sneak-attack', 'Increases damage to large monsters when attacks hit them from behind.', 3, 3, 'Sneak Attack'),
+('adrenaline-rush', 'Perform a perfectly-timed evade just as a monster attacks for a temporary attack boost.', 3, 3, 'Adrenaline Rush');         
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 402 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 422 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -4128,7 +4216,27 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('furious', 'Using Red Scroll: Defense+ 30, all Res+ 20. Swap to Blue Scroll: Infinite Stamina Extended.', 3),
 ('mail-of-hellfire', 'Using Red Scroll: Defense down, attack up. Using Blue Scroll: Resistance down, element up.', 1),
 ('mail-of-hellfire', 'Further decreases defense and resistance, while further increasing attack and element.', 2),
-('mail-of-hellfire', 'Greatly decreases defense and resistance, while greatly increasing attack and element.', 3);            
+('mail-of-hellfire', 'Greatly decreases defense and resistance, while greatly increasing attack and element.', 3),
+('guts', 'Activate effect when vitality is 80 or higher.', 1),
+('guts', 'Activate effect when vitality is 72 or higher.', 2),
+('guts', 'Activate effect when vitality is 64 or higher.', 3),
+('status-trigger', 'While active, effect duration is 5 seconds.', 1),
+('status-trigger', 'While active, effect duration is 8 seconds.', 2),
+('status-trigger', 'While active, effect duration is 12 seconds.', 3),
+('defiance', 'While active, nullifles weak roars, wind pressure, and tremors.', 1),
+('defiance', 'While active, nullifles weak roars, wind pressure, and tremors. Reduces all strong ones, def +5.', 2),
+('defiance', 'While active, nullifles weak and strong roars, wind pressure, and tremors, def +10.', 3),
+('defiance', 'While active, nullifles weak and strong roars, wind, and tremors, reduces powerful roars & d.wind, def +20.', 4),
+('defiance', 'While active, nullifles weak, strong and powerful  roars, wind & dragon wind, and tremors, def +30.', 5),
+('element-exploit', 'Attacks that hit weak spots do +10% elemental damage.', 1),
+('element-exploit', 'Attacks that hit weak spots do +12.5% elemental damage.', 2),
+('element-exploit', 'Attacks that hit weak spots do +15% elemental damage.', 3),
+('sneak-attack', 'While active, increases attack power by 5%.', 1),
+('sneak-attack', 'While active, increases attack power by 10%.', 2),
+('sneak-attack', 'While active, increases attack power by 12%.', 3),
+('adrenaline-rush', 'While active, temporary attack power +10.', 1),
+('adrenaline-rush', 'While active, temporary attack power +15.', 2),
+('adrenaline-rush', 'While active, temporary attack power +30.', 3); 
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
