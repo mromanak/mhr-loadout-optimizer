@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 1165 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
+-- 1180 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -1220,7 +1220,22 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('lucent-nargacuga-body-x', 1, 118, -2, 3, -5, 1, 0, 1, 0, 'Lambent Hauberk', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
 ('lucent-nargacuga-arms-x', 2, 118, -2, 3, -5, 0, 2, 0, 0, 'Lambent Wristrays', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
 ('lucent-nargacuga-waist-x', 3, 118, -2, 3, -5, 2, 0, 1, 0, 'Lambent Sash', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
-('lucent-nargacuga-legs-x', 4, 118, -2, 3, -5, 0, 0, 1, 0, 'Lambent Gaiters', 10, 'Lucent Nargacuga', '2', 0, 3, NULL);       
+('lucent-nargacuga-legs-x', 4, 118, -2, 3, -5, 0, 0, 1, 0, 'Lambent Gaiters', 10, 'Lucent Nargacuga', '2', 0, 3, NULL),
+('flaming-espinas-head-x', 0, 122, -3, 3, 2, 0, 1, 1, 0, 'Flaming Espinas Brain', 10, 'Flaming Espinas', '2', -1, -4, NULL),
+('flaming-espinas-body-x', 1, 122, -3, 3, 2, 0, 2, 0, 0, 'Flaming Espinas Muscle', 10, 'Flaming Espinas', '2', -1, -4, NULL),
+('flaming-espinas-arms-x', 2, 122, -3, 3, 2, 0, 1, 0, 1, 'Flaming Espinas Grip', 10, 'Flaming Espinas', '2', -1, -4, NULL),
+('flaming-espinas-waist-x', 3, 122, -3, 3, 2, 2, 0, 0, 1, 'Flaming Espinas Bowels', 10, 'Flaming Espinas', '2', -1, -4, NULL),
+('flaming-espinas-legs-x', 4, 122, -3, 3, 2, 1, 0, 0, 1, 'Flaming Espinas Heel', 10, 'Flaming Espinas', '2', -1, -4, NULL),
+('violet-mizutsune-head-x', 0, 120, 1, 2, -3, 2, 0, 0, 1, 'Onmyo Toukan', 10, 'Violet Mizutsune', '2', -1, 0, NULL),
+('violet-mizutsune-body-x', 1, 120, 1, 2, -3, 1, 1, 1, 0, 'Onmyo Kariginu', 10, 'Violet Mizutsune', '2', -1, 0, NULL),
+('violet-mizutsune-arms-x', 2, 120, 1, 2, -3, 0, 3, 0, 0, 'Onmyo Tekkou', 10, 'Violet Mizutsune', '2', -1, 0, NULL),
+('violet-mizutsune-waist-x', 3, 120, 1, 2, -3, 1, 2, 0, 0, 'Onmyo Ateobi', 10, 'Violet Mizutsune', '2', -1, 0, NULL),
+('violet-mizutsune-legs-x', 4, 120, 1, 2, -3, 0, 0, 0, 1, 'Onmyo Sashiko', 10, 'Violet Mizutsune', '2', -1, 0, NULL),
+('risen-chameleos-head-x', 0, 125, -3, -5, 3, 0, 1, 0, 1, 'Risen Mizuha Headdress', 10, 'Risen Chameleos', '2', 0, 1, NULL),
+('risen-chameleos-body-x', 1, 125, -3, -5, 3, 0, 0, 0, 1, 'Risen Mizuha Robes', 10, 'Risen Chameleos', '2', 0, 1, NULL),
+('risen-chameleos-arms-x', 2, 125, -3, -5, 3, 1, 1, 0, 1, 'Risen Mizuha Sleeves', 10, 'Risen Chameleos', '2', 0, 1, NULL),
+('risen-chameleos-waist-x', 3, 125, -3, -5, 3, 0, 0, 0, 2, 'Risen Mizuha Sash', 10, 'Risen Chameleos', '2', 0, 1, NULL),
+('risen-chameleos-legs-x', 4, 125, -3, -5, 3, 2, 0, 0, 1, 'Risen Mizuha Gaiters', 10, 'Risen Chameleos', '2', 0, 1, NULL);   
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -1228,7 +1243,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 2362 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
+-- 2405 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -3615,7 +3630,50 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'lucent-nargacuga-legs-x', 'adrenaline-rush'),
 (1, 'lucent-nargacuga-legs-x', 'sneak-attack'),
 (2, 'lucent-nargacuga-legs-x', 'ammo-up'),
-(2, 'lucent-nargacuga-legs-x', 'handicraft');   
+(2, 'lucent-nargacuga-legs-x', 'handicraft'),
+(1, 'flaming-espinas-head-x', 'razor-sharp'),
+(1, 'flaming-espinas-head-x', 'spare-shot'),
+(2, 'flaming-espinas-head-x', 'attack-boost'),
+(1, 'flaming-espinas-body-x', 'charge-master'),
+(2, 'flaming-espinas-body-x', 'attack-boost'),
+(2, 'flaming-espinas-body-x', 'marathon-runner'),
+(1, 'flaming-espinas-arms-x', 'attack-boost'),
+(1, 'flaming-espinas-arms-x', 'intrepid-heart'),
+(2, 'flaming-espinas-arms-x', 'razor-sharp'),
+(2, 'flaming-espinas-arms-x', 'spare-shot'),
+(1, 'flaming-espinas-waist-x', 'chain-crit'),
+(1, 'flaming-espinas-waist-x', 'marathon-runner'),
+(2, 'flaming-espinas-waist-x', 'charge-master'),
+(1, 'flaming-espinas-legs-x', 'attack-boost'),
+(1, 'flaming-espinas-legs-x', 'chain-crit'),
+(1, 'flaming-espinas-legs-x', 'intrepid-heart'),
+(1, 'violet-mizutsune-head-x', 'adrenaline-rush'),
+(3, 'violet-mizutsune-head-x', 'evade-extender'),
+(1, 'violet-mizutsune-body-x', 'embolden'),
+(1, 'violet-mizutsune-body-x', 'weakness-exploit'),
+(2, 'violet-mizutsune-body-x', 'stamina-surge'),
+(1, 'violet-mizutsune-arms-x', 'embolden'),
+(1, 'violet-mizutsune-arms-x', 'stamina-surge'),
+(2, 'violet-mizutsune-arms-x', 'agitator'),
+(1, 'violet-mizutsune-waist-x', 'adrenaline-rush'),
+(1, 'violet-mizutsune-waist-x', 'embolden'),
+(3, 'violet-mizutsune-waist-x', 'agitator'),
+(2, 'violet-mizutsune-legs-x', 'offensive-guard'),
+(2, 'violet-mizutsune-legs-x', 'weakness-exploit'),
+(3, 'violet-mizutsune-legs-x', 'flinch-free'),
+(1, 'risen-chameleos-head-x', 'evade-window'),
+(3, 'risen-chameleos-head-x', 'peak-performance'),
+(1, 'risen-chameleos-body-x', 'buildup-boost'),
+(1, 'risen-chameleos-body-x', 'wirebug-whisperer'),
+(2, 'risen-chameleos-body-x', 'chameleos-blessing'),
+(1, 'risen-chameleos-arms-x', 'buildup-boost'),
+(1, 'risen-chameleos-arms-x', 'chameleos-blessing'),
+(1, 'risen-chameleos-arms-x', 'foray'),
+(1, 'risen-chameleos-waist-x', 'foray'),
+(2, 'risen-chameleos-waist-x', 'wirebug-whisperer'),
+(1, 'risen-chameleos-legs-x', 'buildup-boost'),
+(1, 'risen-chameleos-legs-x', 'chameleos-blessing'),
+(2, 'risen-chameleos-legs-x', 'evade-window'); 
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -3664,7 +3722,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 132 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 135 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -3800,14 +3858,17 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('defiance', 'Increases defense when large monsters become enraged.', 5, 5, 'Defiance'),
 ('element-exploit', 'Increases elemental damage when attacking body parts upon which the element are highly effective.', 3, 3, 'Element Exploit'),
 ('sneak-attack', 'Increases damage to large monsters when attacks hit them from behind.', 3, 3, 'Sneak Attack'),
-('adrenaline-rush', 'Perform a perfectly-timed evade just as a monster attacks for a temporary attack boost.', 3, 3, 'Adrenaline Rush');         
+('adrenaline-rush', 'Perform a perfectly-timed evade just as a monster attacks for a temporary attack boost.', 3, 3, 'Adrenaline Rush'),
+('intrepid-heart', 'After filling the gauge by continuously landing attacks, negates damage reactions and reduces damage taken from a single attack that would knock you back.', 2, 2, 'Intrepid Heart'),
+('embolden', 'When targeted by a monster, that monster becomes more likely to become enraged but your own defense is increased.', 3, 3, 'Embolden'),
+('buildup-boost', 'Increases attack power when you land attacks that build poison, paralysis, sleep, blast, or exhaust. (Exhaust - ammo/phials/coatings only)', 3, 3, 'Buildup Boost');  
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 422 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 430 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -4236,7 +4297,16 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('sneak-attack', 'While active, increases attack power by 12%.', 3),
 ('adrenaline-rush', 'While active, temporary attack power +10.', 1),
 ('adrenaline-rush', 'While active, temporary attack power +15.', 2),
-('adrenaline-rush', 'While active, temporary attack power +30.', 3); 
+('adrenaline-rush', 'While active, temporary attack power +30.', 3),
+('intrepid-heart', 'Activate effect.', 1),
+('intrepid-heart', 'When activated, damage received is further reduced and will detonate an explosion.', 2);         
+INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
+('embolden', 'While active, defense +10, slightly prolongs dodging invincibility and slightly lowers impact when guarding. ', 1),
+('embolden', 'While active, defense +20, prolongs invincibility when dodging and lowers impact when guarding. ', 2),
+('embolden', 'While active, defense +40, greatly prolongs dodging invincibility and greatly lowers impact when guarding.', 3),
+('buildup-boost', 'While active, increases attack power by 10%.', 1),
+('buildup-boost', 'While active, increases attack power by 15%.', 2),
+('buildup-boost', 'While active, increases attack power by 20%.', 3);             
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
