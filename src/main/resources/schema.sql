@@ -3179,11 +3179,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'seregios-waist-x', 'wall-runner'),
 (1, 'seregios-legs-x', 'bladescale-hone'),
 (2, 'seregios-legs-x', 'evade-extender'),
-(1, 'astalos-head-x', 'chain-crit'),
 (2, 'astalos-head-x', 'stun-resistance'),
-(1, 'astalos-body-x', 'chain-crit'),
 (2, 'astalos-body-x', 'stamina-surge'),
-(1, 'astalos-arms-x', 'chain-crit'),
 (1, 'astalos-arms-x', 'stamina-surge'),
 (1, 'astalos-arms-x', 'stun-resistance'),
 (2, 'astalos-waist-x', 'speed-sharpening'),
@@ -3208,11 +3205,11 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'espinas-arms-x', 'foray'),
 (1, 'espinas-arms-x', 'rapid-fire-up'),
 (2, 'espinas-arms-x', 'protective-polish'),
-(1, 'espinas-waist-x', 'protective-polish');        
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'espinas-waist-x', 'protective-polish'),
 (2, 'espinas-waist-x', 'agitator'),
 (1, 'espinas-legs-x', 'foray'),
-(2, 'espinas-legs-x', 'flinch-free'),
+(2, 'espinas-legs-x', 'flinch-free');             
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'espinas-legs-x', 'poison-attack'),
 (1, 'hoplite-head-x', 'artillery'),
 (1, 'hoplite-head-x', 'guard-up'),
@@ -3311,10 +3308,10 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'bazelgeuse-arms-x', 'guard-up'),
 (2, 'bazelgeuse-arms-x', 'agitator'),
 (1, 'bazelgeuse-waist-x', 'guard'),
-(1, 'bazelgeuse-waist-x', 'razor-sharp');  
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'bazelgeuse-waist-x', 'razor-sharp'),
 (2, 'bazelgeuse-waist-x', 'load-shells'),
-(1, 'bazelgeuse-legs-x', 'agitator'),
+(1, 'bazelgeuse-legs-x', 'agitator');            
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'bazelgeuse-legs-x', 'guard'),
 (2, 'bazelgeuse-legs-x', 'artillery'),
 (2, 'damascus-head-x', 'earplugs'),
@@ -3408,11 +3405,11 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'charite-professor-waist-x', 'tremor-resistance'),
 (1, 'charite-professor-legs-x', 'hunger-resistance'),
 (3, 'charite-professor-legs-x', 'marathon-runner'),
-(1, 'scholar-head-x', 'capture-master');         
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'scholar-head-x', 'capture-master'),
 (3, 'scholar-head-x', 'wide-range'),
 (1, 'scholar-body-x', 'free-meal'),
-(3, 'scholar-body-x', 'blight-resistance'),
+(3, 'scholar-body-x', 'blight-resistance');    
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'scholar-arms-x', 'free-meal'),
 (3, 'scholar-arms-x', 'recovery-up'),
 (1, 'scholar-waist-x', 'free-meal'),
@@ -3455,13 +3452,11 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'sailor-legs-x', 'marathon-runner'),
 (1, 'gaismagorm-head-x', 'weakness-exploit'),
 (2, 'gaismagorm-head-x', 'resentment'),
-(1, 'gaismagorm-body-x', 'chain-crit'),
 (1, 'gaismagorm-body-x', 'resentment'),
 (1, 'gaismagorm-body-x', 'weakness-exploit'),
 (1, 'gaismagorm-arms-x', 'resentment'),
 (2, 'gaismagorm-arms-x', 'dereliction'),
 (1, 'gaismagorm-waist-x', 'weakness-exploit'),
-(2, 'gaismagorm-waist-x', 'chain-crit'),
 (1, 'gaismagorm-legs-x', 'dereliction'),
 (1, 'gaismagorm-legs-x', 'resentment'),
 (1, 'wind-serpent-ibushi-head-x', 'evade-extender'),
@@ -3501,12 +3496,12 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'thunder-serpent-narwa-waist-x', 'storm-soul'),
 (1, 'thunder-serpent-narwa-waist-x', 'thunder-alignment'),
 (1, 'thunder-serpent-narwa-legs-x', 'evade-window'),
-(1, 'thunder-serpent-narwa-legs-x', 'marathon-runner');         
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'thunder-serpent-narwa-legs-x', 'marathon-runner'),
 (1, 'thunder-serpent-narwa-legs-x', 'storm-soul'),
 (1, 'thunder-serpent-narwa-legs-x', 'thunder-alignment'),
 (1, 'valstrax-head-x', 'dragonheart'),
-(1, 'valstrax-head-x', 'weakness-exploit'),
+(1, 'valstrax-head-x', 'weakness-exploit');               
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'valstrax-body-x', 'dragonheart'),
 (2, 'valstrax-body-x', 'resuscitate'),
 (1, 'valstrax-arms-x', 'dragonheart'),
@@ -3520,12 +3515,10 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'furious-rajang-head-x', 'furious'),
 (2, 'furious-rajang-head-x', 'razor-sharp'),
 (2, 'furious-rajang-head-x', 'spare-shot'),
-(1, 'furious-rajang-body-x', 'chain-crit'),
 (1, 'furious-rajang-body-x', 'evade-extender'),
 (2, 'furious-rajang-body-x', 'maximum-might'),
 (1, 'furious-rajang-arms-x', 'furious'),
 (2, 'furious-rajang-arms-x', 'critical-eye'),
-(1, 'furious-rajang-waist-x', 'chain-crit'),
 (1, 'furious-rajang-waist-x', 'razor-sharp'),
 (1, 'furious-rajang-waist-x', 'spare-shot'),
 (2, 'furious-rajang-waist-x', 'critical-element'),
@@ -3586,14 +3579,11 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'seething-bazelgeuse-legs-x', 'stamina-surge'),
 (3, 'seething-bazelgeuse-legs-x', 'stamina-thief'),
 (1, 'gold-rathian-head-x', 'foray'),
-(2, 'gold-rathian-head-x', 'chain-crit'),
 (2, 'gold-rathian-head-x', 'status-trigger'),
 (2, 'gold-rathian-body-x', 'counterstrike'),
 (2, 'gold-rathian-body-x', 'defiance'),
 (3, 'gold-rathian-body-x', 'divine-blessing'),
-(1, 'gold-rathian-arms-x', 'chain-crit'),
-(1, 'gold-rathian-arms-x', 'critical-boost');              
-INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'gold-rathian-arms-x', 'critical-boost'),
 (1, 'gold-rathian-arms-x', 'peak-performance'),
 (1, 'gold-rathian-waist-x', 'foray'),
 (1, 'gold-rathian-waist-x', 'status-trigger'),
@@ -3601,7 +3591,8 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'gold-rathian-legs-x', 'peak-performance'),
 (2, 'gold-rathian-legs-x', 'recovery-up'),
 (3, 'gold-rathian-legs-x', 'defiance'),
-(1, 'silver-rathalos-head-x', 'critical-element'),
+(1, 'silver-rathalos-head-x', 'critical-element');   
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'silver-rathalos-head-x', 'critical-boost'),
 (3, 'silver-rathalos-head-x', 'windproof'),
 (1, 'silver-rathalos-body-x', 'critical-element'),
@@ -3641,11 +3632,9 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'flaming-espinas-arms-x', 'intrepid-heart'),
 (2, 'flaming-espinas-arms-x', 'razor-sharp'),
 (2, 'flaming-espinas-arms-x', 'spare-shot'),
-(1, 'flaming-espinas-waist-x', 'chain-crit'),
 (1, 'flaming-espinas-waist-x', 'marathon-runner'),
 (2, 'flaming-espinas-waist-x', 'charge-master'),
 (1, 'flaming-espinas-legs-x', 'attack-boost'),
-(2, 'flaming-espinas-legs-x', 'chain-crit'),
 (1, 'flaming-espinas-legs-x', 'intrepid-heart'),
 (1, 'violet-mizutsune-head-x', 'adrenaline-rush'),
 (3, 'violet-mizutsune-head-x', 'evade-extender'),
@@ -3673,7 +3662,18 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (2, 'risen-chameleos-waist-x', 'wirebug-whisperer'),
 (1, 'risen-chameleos-legs-x', 'buildup-boost'),
 (1, 'risen-chameleos-legs-x', 'chameleos-blessing'),
-(2, 'risen-chameleos-legs-x', 'evade-window'); 
+(2, 'risen-chameleos-legs-x', 'evade-window'),
+(1, 'astalos-arms-x', 'burst'),
+(1, 'astalos-body-x', 'burst'),
+(1, 'astalos-head-x', 'burst'),
+(1, 'flaming-espinas-waist-x', 'burst'),
+(1, 'furious-rajang-body-x', 'burst'),
+(1, 'furious-rajang-waist-x', 'burst'),
+(1, 'gaismagorm-body-x', 'burst'),
+(1, 'gold-rathian-arms-x', 'burst'),
+(2, 'flaming-espinas-legs-x', 'burst'),
+(2, 'gaismagorm-waist-x', 'burst'),
+(2, 'gold-rathian-head-x', 'burst');   
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -3845,7 +3845,6 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('coalescence', 'Temporarily enhances attacks after recovering from blights or abnormal status.', 3, 3, 'Coalescence'),
 ('bladescale-hone', 'Dodge rolling to evade an attack with your weapon drawn will recover sharpness, refill bowgun ammo, or give Close-range Coatings a temporary boost.', 3, 3, 'Bladescale Hone'),
 ('wall-runner-boost', 'Wirebug Gauge recovers faster while wall running.', 1, 1, 'Wall Runner (Boost)'),
-('chain-crit', 'Continuously landing hits gradually increases attack and elemental attack. (The amount of increase depends on the weapon.)', 3, 3, 'Chain Crit'),
 ('redirection', 'Perform a perfectly-timed Switch Skill Swap just as a monster attacks to reduce the damage and negate damage reactions.', 2, 2, 'Redirection'),
 ('foray', 'Increases attack power and affinity when attacking a large monster affected by poison, paralysis or an elemental blight.', 3, 3, 'Foray'),
 ('bloodlust', 'The effects of the Frenzy virus change. Health is gradually reduced, but you gain a variety of effects. Frenzy virus occurs regularly when in combat.', 3, 3, 'Bloodlust'),
@@ -3861,7 +3860,8 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('adrenaline-rush', 'Perform a perfectly-timed evade just as a monster attacks for a temporary attack boost.', 3, 3, 'Adrenaline Rush'),
 ('intrepid-heart', 'After filling the gauge by continuously landing attacks, negates damage reactions and reduces damage taken from a single attack that would knock you back.', 2, 2, 'Intrepid Heart'),
 ('embolden', 'When targeted by a monster, that monster becomes more likely to become enraged but your own defense is increased.', 3, 3, 'Embolden'),
-('buildup-boost', 'Increases attack power when you land attacks that build poison, paralysis, sleep, blast, or exhaust. (Exhaust - ammo/phials/coatings only)', 3, 3, 'Buildup Boost');  
+('buildup-boost', 'Increases attack power when you land attacks that build poison, paralysis, sleep, blast, or exhaust. (Exhaust - ammo/phials/coatings only)', 3, 3, 'Buildup Boost'),
+('burst', 'Continuously landing hits gradually increases attack and elemental attack. (The amount of increase depends on the weapon.)', 3, 3, 'Burst');            
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
@@ -4254,11 +4254,8 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('bladescale-hone', 'Activates 75% of the time.', 2),
 ('bladescale-hone', 'Activates 100% of the time.', 3),
 ('wall-runner-boost', 'Wirebug Gauge recovers faster while wall running.', 1),
-('chain-crit', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for an extra stat boost.', 1);         
+('redirection', 'Perform a perfectly-timed Switch Skill Swap just as a monster attacks to reduce the damage and negate damage reactions.', 1);             
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
-('chain-crit', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a large stat boost.', 2),
-('chain-crit', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a huge stat boost.', 3),
-('redirection', 'Perform a perfectly-timed Switch Skill Swap just as a monster attacks to reduce the damage and negate damage reactions.', 1),
 ('redirection', 'Nullifies incoming damage, and automatically performs a Swap Evade backwards which recovers Wirebug Gauge.', 2),
 ('foray', 'While active, increases attack power +10.', 1),
 ('foray', 'While active, increases attack power +10 and affinity +10%.', 2),
@@ -4299,14 +4296,17 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('adrenaline-rush', 'While active, temporary attack power +15.', 2),
 ('adrenaline-rush', 'While active, temporary attack power +30.', 3),
 ('intrepid-heart', 'Activate effect.', 1),
-('intrepid-heart', 'When activated, damage received is further reduced and will detonate an explosion.', 2);         
-INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
+('intrepid-heart', 'When activated, damage received is further reduced and will detonate an explosion.', 2),
 ('embolden', 'While active, defense +10, slightly prolongs dodging invincibility and slightly lowers impact when guarding. ', 1),
 ('embolden', 'While active, defense +20, prolongs invincibility when dodging and lowers impact when guarding. ', 2),
-('embolden', 'While active, defense +40, greatly prolongs dodging invincibility and greatly lowers impact when guarding.', 3),
+('embolden', 'While active, defense +40, greatly prolongs dodging invincibility and greatly lowers impact when guarding.', 3);     
+INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('buildup-boost', 'While active, increases attack power by 10%.', 1),
 ('buildup-boost', 'While active, increases attack power by 15%.', 2),
-('buildup-boost', 'While active, increases attack power by 20%.', 3);             
+('buildup-boost', 'While active, increases attack power by 20%.', 3),
+('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for an extra stat boost.', 1),
+('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a large stat boost.', 2),
+('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a huge stat boost.', 3);            
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
