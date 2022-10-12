@@ -3645,7 +3645,7 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'flaming-espinas-waist-x', 'marathon-runner'),
 (2, 'flaming-espinas-waist-x', 'charge-master'),
 (1, 'flaming-espinas-legs-x', 'attack-boost'),
-(1, 'flaming-espinas-legs-x', 'chain-crit'),
+(2, 'flaming-espinas-legs-x', 'chain-crit'),
 (1, 'flaming-espinas-legs-x', 'intrepid-heart'),
 (1, 'violet-mizutsune-head-x', 'adrenaline-rush'),
 (3, 'violet-mizutsune-head-x', 'evade-extender'),
