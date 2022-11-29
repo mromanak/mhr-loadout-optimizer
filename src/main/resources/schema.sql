@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 1180 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
+-- 1195 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -1235,7 +1235,23 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('risen-chameleos-body-x', 1, 125, -3, -5, 3, 0, 0, 0, 1, 'Risen Mizuha Robes', 10, 'Risen Chameleos', '2', 0, 1, NULL),
 ('risen-chameleos-arms-x', 2, 125, -3, -5, 3, 1, 1, 0, 1, 'Risen Mizuha Sleeves', 10, 'Risen Chameleos', '2', 0, 1, NULL),
 ('risen-chameleos-waist-x', 3, 125, -3, -5, 3, 0, 0, 0, 2, 'Risen Mizuha Sash', 10, 'Risen Chameleos', '2', 0, 1, NULL),
-('risen-chameleos-legs-x', 4, 125, -3, -5, 3, 2, 0, 0, 1, 'Risen Mizuha Gaiters', 10, 'Risen Chameleos', '2', 0, 1, NULL);   
+('risen-chameleos-legs-x', 4, 125, -3, -5, 3, 2, 0, 0, 1, 'Risen Mizuha Gaiters', 10, 'Risen Chameleos', '2', 0, 1, NULL),
+('risen-kushala-daora-head-x', 0, 124, -3, -1, 3, 1, 1, 1, 0, 'Risen Kushala Glare', 10, 'Risen Kushala Daora', '2', -2, 2, NULL),
+('risen-kushala-daora-body-x', 1, 124, -3, -1, 3, 1, 1, 1, 0, 'Risen Kushala Iram', 10, 'Risen Kushala Daora', '2', -2, 2, NULL),
+('risen-kushala-daora-arms-x', 2, 124, -3, -1, 3, 0, 1, 0, 1, 'Risen Kushala Grande', 10, 'Risen Kushala Daora', '2', -2, 2, NULL),
+('risen-kushala-daora-waist-x', 3, 124, -3, -1, 3, 1, 0, 1, 0, 'Risen Kushala Cocoon', 10, 'Risen Kushala Daora', '2', -2, 2, NULL),
+('risen-kushala-daora-legs-x', 4, 124, -3, -1, 3, 0, 0, 0, 2, 'Risen Kushala Crus', 10, 'Risen Kushala Daora', '2', -2, 2, NULL),
+('risen-teostra-head-x', 0, 124, -3, 4, -1, 0, 1, 1, 0, 'Risen Kaiser Horns', 10, 'Risen Teostra', '2', 1, -4, NULL),
+('risen-teostra-body-x', 1, 124, -3, 4, -1, 0, 2, 0, 0, 'Risen Kaiser Mail', 10, 'Risen Teostra', '2', 1, -4, NULL),
+('risen-teostra-arms-x', 2, 124, -3, 4, -1, 0, 0, 0, 2, 'Risen Kaiser Braces', 10, 'Risen Teostra', '2', 1, -4, NULL); 
+INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
+('risen-teostra-waist-x', 3, 124, -3, 4, -1, 0, 0, 1, 1, 'Risen Kaiser Coil', 10, 'Risen Teostra', '2', 1, -4, NULL),
+('risen-teostra-legs-x', 4, 124, -3, 4, -1, 2, 0, 0, 1, 'Risen Kaiser Cuisse', 10, 'Risen Teostra', '2', 1, -4, NULL),
+('chaotic-gore-magala-head-x', 0, 118, -4, -4, 2, 0, 1, 0, 1, 'Chaotic Helm/Nephilim Helm', 10, 'Chaotic Gore Magala', '2', -2, 3, NULL),
+('chaotic-gore-magala-body-x', 1, 118, -4, -4, 2, 1, 0, 1, 0, 'Chaotic Mail/Nephilim Mail', 10, 'Chaotic Gore Magala', '2', -2, 3, NULL),
+('chaotic-gore-magala-arms-x', 2, 118, -4, -4, 2, 0, 0, 1, 0, 'Chaotic Vambraces/Nephilim Vambraces', 10, 'Chaotic Gore Magala', '2', -2, 3, NULL),
+('chaotic-gore-magala-waist-x', 3, 118, -4, -4, 2, 2, 0, 1, 0, 'Chaotic Faulds/Nephilim Tassets', 10, 'Chaotic Gore Magala', '2', -2, 3, NULL),
+('chaotic-gore-magala-legs-x', 4, 118, -4, -4, 2, 0, 0, 1, 0, 'Chaotic Greaves / Nephilim Greaves', 10, 'Chaotic Gore Magala', '2', -2, 3, NULL);               
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -1243,7 +1259,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 2405 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
+-- 2450 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -3673,7 +3689,53 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'gold-rathian-arms-x', 'burst'),
 (2, 'flaming-espinas-legs-x', 'burst'),
 (2, 'gaismagorm-waist-x', 'burst'),
-(2, 'gold-rathian-head-x', 'burst');   
+(2, 'gold-rathian-head-x', 'burst'),
+(1, 'risen-kushala-daora-head-x', 'wind-mantle'),
+(3, 'risen-kushala-daora-head-x', 'wirebug-whisperer'),
+(2, 'risen-kushala-daora-body-x', 'attack-boost'),
+(2, 'risen-kushala-daora-body-x', 'kushala-blessing'),
+(2, 'risen-kushala-daora-body-x', 'razor-sharp'),
+(2, 'risen-kushala-daora-body-x', 'spare-shot');            
+INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
+(1, 'risen-kushala-daora-arms-x', 'wind-mantle'),
+(2, 'risen-kushala-daora-arms-x', 'burst'),
+(2, 'risen-kushala-daora-waist-x', 'attack-boost'),
+(2, 'risen-kushala-daora-waist-x', 'kushala-blessing'),
+(3, 'risen-kushala-daora-waist-x', 'recovery-up'),
+(1, 'risen-kushala-daora-legs-x', 'burst'),
+(1, 'risen-kushala-daora-legs-x', 'wind-mantle'),
+(1, 'risen-teostra-head-x', 'powder-mantle'),
+(1, 'risen-teostra-head-x', 'weakness-exploit'),
+(2, 'risen-teostra-head-x', 'critical-eye'),
+(1, 'risen-teostra-body-x', 'powder-mantle'),
+(1, 'risen-teostra-body-x', 'weakness-exploit'),
+(3, 'risen-teostra-body-x', 'critical-eye'),
+(1, 'risen-teostra-arms-x', 'ballistics'),
+(1, 'risen-teostra-arms-x', 'critical-eye'),
+(1, 'risen-teostra-arms-x', 'master-s-touch'),
+(2, 'risen-teostra-arms-x', 'teostra-blessing'),
+(1, 'risen-teostra-waist-x', 'powder-mantle'),
+(2, 'risen-teostra-waist-x', 'ballistics'),
+(2, 'risen-teostra-waist-x', 'master-s-touch'),
+(1, 'risen-teostra-legs-x', 'weakness-exploit'),
+(2, 'risen-teostra-legs-x', 'critical-element'),
+(2, 'risen-teostra-legs-x', 'fire-attack'),
+(2, 'risen-teostra-legs-x', 'teostra-blessing'),
+(1, 'chaotic-gore-magala-head-x', 'element-exploit'),
+(1, 'chaotic-gore-magala-head-x', 'strife'),
+(2, 'chaotic-gore-magala-head-x', 'critical-eye'),
+(1, 'chaotic-gore-magala-body-x', 'strife'),
+(2, 'chaotic-gore-magala-body-x', 'critical-boost'),
+(2, 'chaotic-gore-magala-body-x', 'critical-eye'),
+(1, 'chaotic-gore-magala-arms-x', 'berserk'),
+(1, 'chaotic-gore-magala-arms-x', 'bloodlust'),
+(3, 'chaotic-gore-magala-arms-x', 'resentment'),
+(1, 'chaotic-gore-magala-waist-x', 'strife'),
+(2, 'chaotic-gore-magala-waist-x', 'critical-eye'),
+(2, 'chaotic-gore-magala-waist-x', 'resentment'),
+(1, 'chaotic-gore-magala-legs-x', 'berserk'),
+(1, 'chaotic-gore-magala-legs-x', 'bloodlust'),
+(3, 'chaotic-gore-magala-legs-x', 'coalescence');             
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -3722,7 +3784,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 135 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 139 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -3861,14 +3923,18 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('intrepid-heart', 'After filling the gauge by continuously landing attacks, negates damage reactions and reduces damage taken from a single attack that would knock you back.', 2, 2, 'Intrepid Heart'),
 ('embolden', 'When targeted by a monster, that monster becomes more likely to become enraged but your own defense is increased.', 3, 3, 'Embolden'),
 ('buildup-boost', 'Increases attack power when you land attacks that build poison, paralysis, sleep, blast, or exhaust. (Exhaust - ammo/phials/coatings only)', 3, 3, 'Buildup Boost'),
-('burst', 'Continuously landing hits gradually increases attack and elemental attack. (The amount of increase depends on the weapon.)', 3, 3, 'Burst');            
+('burst', 'Continuously landing hits gradually increases attack and elemental attack. (The amount of increase depends on the weapon.)', 3, 3, 'Burst'),
+('wind-mantle', 'Using Silkbind attacks boosts Wirebug Gauge recovery. Landing continuous attacks increases the effect. Wears off when you sheathe your weapon.', 1, 1, 'Wind Mantle'),
+('powder-mantle', 'Continuously attacking a large monster will cause powder to form around you. The color and effects of the powder will change over time.', 1, 1, 'Powder Mantle'),
+('strife', 'Increases elemental attack and affinity in proportion to the length of your red health gauge.', 1, 1, 'Strife'),
+('berserk', 'Switch to the Blue Swap Scroll and all vitality will change to red gauge and start decreasing. As long as you have red, you cannot faint.', 1, 1, 'Berserk');       
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 430 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 434 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -4306,7 +4372,11 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('buildup-boost', 'While active, increases attack power by 20%.', 3),
 ('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for an extra stat boost.', 1),
 ('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a large stat boost.', 2),
-('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a huge stat boost.', 3);            
+('burst', 'Upon attack hit, temp attack +5, element +5; hit 5 successive times for a huge stat boost.', 3),
+('wind-mantle', 'Activate effect.', 1),
+('powder-mantle', 'Get sent flying when wreathed in red, and you''ll receive explosive damage. Attack when in blue for an explosive finish.', 1),
+('strife', 'Increases attack power in accordance to gauge length.', 1),
+('berserk', 'Activate effect.', 1);      
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
