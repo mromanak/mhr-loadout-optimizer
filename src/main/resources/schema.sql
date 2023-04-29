@@ -24,7 +24,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE"(
     "SET_BONUS_ID" VARCHAR
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4" PRIMARY KEY("ID");   
--- 1205 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
+-- 1215 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE;           
 INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('chainmail-head-lr', 0, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Headgear', 1, 'Chainmail', '0', 1, 0, NULL),
 ('chainmail-body-lr', 1, 4, 0, 0, 0, 0, 0, 0, 0, 'Chainmail Vest', 1, 'Chainmail', '0', 1, 0, NULL),
@@ -1261,7 +1261,17 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE" VALUES
 ('risen-valstrax-body-x', 1, 121, 3, -2, -2, 0, 0, 0, 2, 'Valstrax Mail - Epoch', 10, 'Risen Valstrax', '2', -2, -2, NULL),
 ('risen-valstrax-arms-x', 2, 121, 3, -2, -2, 2, 0, 0, 1, 'Valstrax Braces - Epoch', 10, 'Risen Valstrax', '2', -2, -2, NULL),
 ('risen-valstrax-waist-x', 3, 121, 3, -2, -2, 2, 0, 0, 1, 'Valstrax Coil - Epoch', 10, 'Risen Valstrax', '2', -2, -2, NULL),
-('risen-valstrax-legs-x', 4, 121, 3, -2, -2, 0, 0, 1, 1, 'Valstrax Greaves - Epoch', 10, 'Risen Valstrax', '2', -2, -2, NULL);               
+('risen-valstrax-legs-x', 4, 121, 3, -2, -2, 0, 0, 1, 1, 'Valstrax Greaves - Epoch', 10, 'Risen Valstrax', '2', -2, -2, NULL),
+('amatsu-head-x', 0, 125, -5, -3, 0, 0, 0, 1, 1, 'Tempest Crown', 10, 'Amatsu', '2', 0, 4, NULL),
+('amatsu-body-x', 1, 125, -5, -3, 0, 1, 0, 0, 2, 'Tempest Robe', 10, 'Amatsu', '2', 0, 4, NULL),
+('amatsu-arms-x', 2, 125, -5, -3, 0, 1, 0, 0, 2, 'Tempest Sleeves', 10, 'Amatsu', '2', 0, 4, NULL),
+('amatsu-waist-x', 3, 125, -5, -3, 0, 0, 0, 1, 1, 'Tempest Obi', 10, 'Amatsu', '2', 0, 4, NULL),
+('amatsu-legs-x', 4, 125, -5, -3, 0, 0, 0, 0, 2, 'Tempest Hakama', 10, 'Amatsu', '2', 0, 4, NULL),
+('risen-shagaru-magala-head-x', 0, 122, -4, -2, 2, 0, 0, 0, 2, 'Prudence/Virtue Helm', 10, 'Risen Shagaru Magala', '2', -1, 2, NULL),
+('risen-shagaru-magala-body-x', 1, 122, -4, -2, 2, 2, 0, 1, 0, 'Prudence/Virtue Mail', 10, 'Risen Shagaru Magala', '2', -1, 2, NULL),
+('risen-shagaru-magala-arms-x', 2, 122, -4, -2, 2, 1, 0, 1, 0, 'Prudence/Virtue Braces', 10, 'Risen Shagaru Magala', '2', -1, 2, NULL),
+('risen-shagaru-magala-waist-x', 3, 122, -4, -2, 2, 0, 1, 0, 1, 'Prudence/Virtue Coil', 10, 'Risen Shagaru Magala', '2', -1, 2, NULL),
+('risen-shagaru-magala-legs-x', 4, 122, -4, -2, 2, 1, 0, 1, 1, 'Prudence/Virtue Greaves', 10, 'Risen Shagaru Magala', '2', -1, 2, NULL);
 CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_LEVEL" INTEGER NOT NULL CHECK (("SKILL_LEVEL" <= 7)
     AND ("SKILL_LEVEL" >= 1)),
@@ -1269,7 +1279,7 @@ CREATE CACHED TABLE "PUBLIC"."ARMOR_PIECE_SKILL"(
     "SKILL_ID" VARCHAR NOT NULL
 );      
 ALTER TABLE "PUBLIC"."ARMOR_PIECE_SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_F" PRIMARY KEY("ARMOR_PIECE_ID", "SKILL_ID");     
--- 2477 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
+-- 2499 +/- SELECT COUNT(*) FROM PUBLIC.ARMOR_PIECE_SKILL;     
 INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (1, 'chainmail-head-lr', 'botanist'),
 (1, 'chainmail-head-lr', 'defense-boost'),
@@ -3772,7 +3782,29 @@ INSERT INTO "PUBLIC"."ARMOR_PIECE_SKILL" VALUES
 (3, 'risen-valstrax-waist-x', 'stamina-surge'),
 (1, 'risen-valstrax-legs-x', 'critical-boost'),
 (2, 'risen-valstrax-legs-x', 'attack-boost'),
-(3, 'risen-valstrax-legs-x', 'stun-resistance');    
+(3, 'risen-valstrax-legs-x', 'stun-resistance'),
+(5, 'amatsu-head-x', 'evade-window'),
+(1, 'amatsu-body-x', 'critical-boost'),
+(1, 'amatsu-body-x', 'heaven-sent'),
+(1, 'amatsu-arms-x', 'heaven-sent'),
+(1, 'amatsu-arms-x', 'latent-power'),
+(4, 'amatsu-waist-x', 'latent-power'),
+(1, 'amatsu-legs-x', 'heaven-sent'),
+(2, 'amatsu-legs-x', 'critical-boost'),
+(2, 'risen-shagaru-magala-head-x', 'defiance'),
+(2, 'risen-shagaru-magala-head-x', 'redirection'),
+(2, 'risen-shagaru-magala-body-x', 'strife'),
+(3, 'risen-shagaru-magala-body-x', 'ammo-up'),
+(3, 'risen-shagaru-magala-body-x', 'handicraft'),
+(1, 'risen-shagaru-magala-arms-x', 'bloodlust'),
+(1, 'risen-shagaru-magala-arms-x', 'frenzied-bloodlust'),
+(3, 'risen-shagaru-magala-arms-x', 'attack-boost'),
+(1, 'risen-shagaru-magala-waist-x', 'bloodlust'),
+(1, 'risen-shagaru-magala-waist-x', 'frenzied-bloodlust'),
+(2, 'risen-shagaru-magala-waist-x', 'weakness-exploit'),
+(1, 'risen-shagaru-magala-legs-x', 'bloodlust'),
+(1, 'risen-shagaru-magala-legs-x', 'frenzied-bloodlust'),
+(1, 'risen-shagaru-magala-legs-x', 'strife');  
 CREATE CACHED TABLE "PUBLIC"."JEWEL"(
     "ID" VARCHAR NOT NULL,
     "JEWEL_LEVEL" INT DEFAULT 1 NOT NULL CHECK (("JEWEL_LEVEL" >= 1)
@@ -3821,7 +3853,7 @@ CREATE CACHED TABLE "PUBLIC"."SKILL"(
     "NAME" VARCHAR NOT NULL
 );          
 ALTER TABLE "PUBLIC"."SKILL" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_4B" PRIMARY KEY("ID");        
--- 141 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
+-- 143 +/- SELECT COUNT(*) FROM PUBLIC.SKILL;  
 INSERT INTO "PUBLIC"."SKILL" VALUES
 ('attack-boost', 'Increases attack power.', 7, 7, 'Attack Boost'),
 ('agitator', 'Increases attack power and affinity when large monsters become enraged.', 5, 5, 'Agitator'),
@@ -3967,13 +3999,16 @@ INSERT INTO "PUBLIC"."SKILL" VALUES
 ('berserk', 'Switch to the Blue Swap Scroll and all vitality will change to red gauge and start decreasing. As long as you have red, you cannot faint.', 1, 1, 'Berserk'),
 ('frostcraft', 'An aura of frost builds when your weapon is sheathed, raising attack. The effect decreases with each melee hit or shot/arrow fired.', 1, 1, 'Frostcraft'),
 ('dragon-conversion', 'When using the Red Swap Scroll, all elemental resistance is set to 0 and converted into elemental attack. The Blue Swap Scroll raises elemental resistance.', 1, 1, 'Dragon Conversion');           
+INSERT INTO "PUBLIC"."SKILL" VALUES
+('heaven-sent', 'Activates when not taking damage for a while during combat with a large monster. The effect is lost when you are knocked back or stray too far away from the monster.', 1, 1, 'Heaven-Sent'),
+('frenzied-bloodlust', 'Temporarily gain an additional Wirebug when overcoming the Frenzy. The effect duration decreases drastically when your weapon is sheathed.', 1, 1, 'Frenzied Bloodlust');           
 CREATE CACHED TABLE "PUBLIC"."SKILL_EFFECT"(
     "SKILL_ID" VARCHAR NOT NULL,
     "EFFECT" VARCHAR NOT NULL,
     "SKILL_LEVEL" INTEGER NOT NULL
 );             
 ALTER TABLE "PUBLIC"."SKILL_EFFECT" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_B" PRIMARY KEY("SKILL_ID", "SKILL_LEVEL");             
--- 436 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
+-- 438 +/- SELECT COUNT(*) FROM PUBLIC.SKILL_EFFECT;           
 INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('attack-boost', 'Attack +3', 1),
 ('attack-boost', 'Attack +6', 2),
@@ -4417,7 +4452,9 @@ INSERT INTO "PUBLIC"."SKILL_EFFECT" VALUES
 ('strife', 'Increases attack power in accordance to gauge length.', 1),
 ('berserk', 'Activate effect.', 1),
 ('frostcraft', 'Activate effect.', 1),
-('dragon-conversion', 'Activate effect. All elemental resistances +3.', 1);   
+('dragon-conversion', 'Activate effect. All elemental resistances +3.', 1),
+('heaven-sent', 'Decreases damage once and reduces stamina consumption while active. Performing a Switch Skill Swap will recover sharpness and reload ammo.', 1),
+('frenzied-bloodlust', 'Effect duration: 30 seconds.', 1);      
 CREATE CACHED TABLE "PUBLIC"."UNCAPPING_SKILLS"(
     "UNCAPPING_SKILL_ID" VARCHAR,
     "ID" VARCHAR NOT NULL
